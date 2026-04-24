@@ -3,6 +3,15 @@ funcional aún)."""
 
 from connect import init_connections, close_connections
 
+
+"""
+USO DE IA
+Chat me ayudo a crear el menu con las queries que se plantearon
+en el menu es la misma sinaxis que en los laboratiorios a excepcion de 
+las connecciones que se usan con el diccionario
+"""
+
+
 def print_menu():
     print("\n" + "="*20)
     print("App de Habitos y Bienestar")
@@ -63,7 +72,7 @@ def main():
     print("¡Conexiones establecidas!")
 
     cassandra_session = conexion["cassandra_session"]
-    mongo_db          = conexion["mongo_db"]
+    mongo_db          = conexion["mongo_url"]
     dgraph_client     = conexion["dgraph_client"]
 
     while True:
