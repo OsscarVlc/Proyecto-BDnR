@@ -1,8 +1,0 @@
-cassandra-driver
-time_uuid
-pydgraph
-falcon
-pymongo
-uvicorn
-requests
-python-dotenv 
