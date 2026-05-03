@@ -1,0 +1,123 @@
+user_id,category,routine_id,name,scheduled_days,status
+1,Ejercicio,1,Correr,Lunes|Miercoles|Viernes,active
+1,Bienestar,2,Hacer yoga,Lunes|Jueves|Domingo,active
+1,Creatividad,3,Escribir diario,Miercoles|Sabado,active
+1,Ejercicio,4,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+2,Estudio,5,Leer,Martes|Jueves|Sabado,active
+2,Creatividad,6,Escribir diario,Miercoles|Sabado,active
+2,Productividad,7,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+2,Bienestar,8,Hacer yoga,Lunes|Jueves|Domingo,active
+3,Bienestar,9,Meditar,Lunes|Jueves|Domingo,active
+3,Ejercicio,10,Correr,Lunes|Miercoles|Viernes,active
+3,Ejercicio,11,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+4,Productividad,12,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+4,Estudio,13,Leer,Martes|Jueves|Sabado,active
+4,Creatividad,14,Escribir diario,Miercoles|Sabado,active
+5,Ejercicio,15,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+5,Ejercicio,16,Correr,Lunes|Miercoles|Viernes,active
+5,Salud,17,Cocinar saludable,Lunes|Miercoles|Viernes,active
+6,Estudio,18,Estudiar programacion,Martes|Jueves|Sabado,active
+6,Estudio,19,Leer,Martes|Jueves|Sabado,active
+6,Creatividad,20,Escribir diario,Miercoles|Sabado,active
+7,Finanzas,21,Ahorrar dinero,Viernes,active
+7,Productividad,22,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+7,Salud,23,Cocinar saludable,Lunes|Miercoles|Viernes,active
+8,Bienestar,24,Hacer yoga,Lunes|Jueves|Domingo,active
+8,Social,25,Salir con amigos,Sabado|Domingo,active
+8,Ejercicio,26,Correr,Lunes|Miercoles|Viernes,active
+9,Bienestar,27,Hacer yoga,Lunes|Jueves|Domingo,active
+9,Ejercicio,28,Correr,Lunes|Miercoles|Viernes,active
+9,Ejercicio,29,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+10,Creatividad,30,Escribir diario,Miercoles|Sabado,active
+10,Estudio,31,Leer,Martes|Jueves|Sabado,active
+10,Creatividad,32,Pintar,Miercoles|Sabado,active
+11,Ejercicio,33,Correr,Lunes|Miercoles|Viernes,active
+11,Ejercicio,34,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+11,Salud,35,Cocinar saludable,Lunes|Miercoles|Viernes,active
+12,Estudio,36,Leer,Martes|Jueves|Sabado,active
+12,Estudio,37,Estudiar programacion,Martes|Jueves|Sabado,active
+12,Productividad,38,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+13,Finanzas,39,Ahorrar dinero,Viernes,active
+13,Productividad,40,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+13,Salud,41,Cocinar saludable,Lunes|Miercoles|Viernes,active
+14,Estudio,42,Leer,Martes|Jueves|Sabado,active
+14,Bienestar,43,Meditar,Lunes|Jueves|Domingo,active
+14,Bienestar,44,Hacer yoga,Lunes|Jueves|Domingo,active
+15,Ejercicio,45,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+15,Ejercicio,46,Correr,Lunes|Miercoles|Viernes,active
+15,Salud,47,Cocinar saludable,Lunes|Miercoles|Viernes,active
+16,Estudio,48,Leer,Martes|Jueves|Sabado,active
+16,Productividad,49,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+16,Creatividad,50,Pintar,Miercoles|Sabado,active
+17,Bienestar,51,Meditar,Lunes|Jueves|Domingo,active
+17,Creatividad,52,Escribir diario,Miercoles|Sabado,active
+17,Bienestar,53,Hacer yoga,Lunes|Jueves|Domingo,active
+18,Ejercicio,54,Correr,Lunes|Miercoles|Viernes,active
+18,Ejercicio,55,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+18,Productividad,56,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+19,Estudio,57,Leer,Martes|Jueves|Sabado,active
+19,Estudio,58,Estudiar programacion,Martes|Jueves|Sabado,active
+19,Creatividad,59,Escribir diario,Miercoles|Sabado,active
+20,Ejercicio,60,Correr,Lunes|Miercoles|Viernes,active
+20,Ejercicio,61,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+20,Salud,62,Cocinar saludable,Lunes|Miercoles|Viernes,active
+21,Bienestar,63,Meditar,Lunes|Jueves|Domingo,active
+21,Creatividad,64,Escribir diario,Miercoles|Sabado,active
+21,Bienestar,65,Hacer yoga,Lunes|Jueves|Domingo,active
+22,Ejercicio,66,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+22,Ejercicio,67,Correr,Lunes|Miercoles|Viernes,active
+22,Salud,68,Cocinar saludable,Lunes|Miercoles|Viernes,active
+23,Estudio,69,Leer,Martes|Jueves|Sabado,active
+23,Creatividad,70,Escribir diario,Miercoles|Sabado,active
+23,Productividad,71,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+24,Finanzas,72,Ahorrar dinero,Viernes,active
+24,Productividad,73,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+24,Salud,74,Cocinar saludable,Lunes|Miercoles|Viernes,active
+25,Bienestar,75,Meditar,Lunes|Jueves|Domingo,active
+25,Estudio,76,Leer,Martes|Jueves|Sabado,active
+25,Bienestar,77,Hacer yoga,Lunes|Jueves|Domingo,active
+26,Ejercicio,78,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+26,Ejercicio,79,Correr,Lunes|Miercoles|Viernes,active
+26,Salud,80,Cocinar saludable,Lunes|Miercoles|Viernes,active
+27,Bienestar,81,Meditar,Lunes|Jueves|Domingo,active
+27,Creatividad,82,Escribir diario,Miercoles|Sabado,active
+27,Bienestar,83,Hacer yoga,Lunes|Jueves|Domingo,active
+28,Finanzas,84,Ahorrar dinero,Viernes,active
+28,Productividad,85,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+28,Salud,86,Cocinar saludable,Lunes|Miercoles|Viernes,active
+29,Estudio,87,Leer,Martes|Jueves|Sabado,active
+29,Creatividad,88,Escribir diario,Miercoles|Sabado,active
+29,Bienestar,89,Hacer yoga,Lunes|Jueves|Domingo,active
+30,Ejercicio,90,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+30,Ejercicio,91,Correr,Lunes|Miercoles|Viernes,active
+30,Salud,92,Cocinar saludable,Lunes|Miercoles|Viernes,active
+31,Bienestar,93,Meditar,Lunes|Jueves|Domingo,active
+31,Estudio,94,Leer,Martes|Jueves|Sabado,active
+31,Bienestar,95,Hacer yoga,Lunes|Jueves|Domingo,active
+32,Ejercicio,96,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+32,Ejercicio,97,Correr,Lunes|Miercoles|Viernes,active
+32,Productividad,98,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+33,Estudio,99,Leer,Martes|Jueves|Sabado,active
+33,Productividad,100,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+33,Creatividad,101,Escribir diario,Miercoles|Sabado,active
+34,Ejercicio,102,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+34,Ejercicio,103,Correr,Lunes|Miercoles|Viernes,active
+34,Salud,104,Cocinar saludable,Lunes|Miercoles|Viernes,active
+35,Bienestar,105,Meditar,Lunes|Jueves|Domingo,active
+35,Creatividad,106,Escribir diario,Miercoles|Sabado,active
+35,Bienestar,107,Hacer yoga,Lunes|Jueves|Domingo,active
+36,Finanzas,108,Ahorrar dinero,Viernes,active
+36,Productividad,109,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+36,Salud,110,Cocinar saludable,Lunes|Miercoles|Viernes,active
+37,Estudio,111,Leer,Martes|Jueves|Sabado,active
+37,Bienestar,112,Meditar,Lunes|Jueves|Domingo,active
+37,Bienestar,113,Hacer yoga,Lunes|Jueves|Domingo,active
+38,Ejercicio,114,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+38,Ejercicio,115,Correr,Lunes|Miercoles|Viernes,active
+38,Productividad,116,Planificar dia,Lunes|Martes|Miercoles|Jueves|Viernes,active
+39,Estudio,117,Leer,Martes|Jueves|Sabado,active
+39,Creatividad,118,Escribir diario,Miercoles|Sabado,active
+39,Bienestar,119,Hacer yoga,Lunes|Jueves|Domingo,active
+40,Ejercicio,120,Ir al gimnasio,Lunes|Miercoles|Viernes,active
+40,Ejercicio,121,Correr,Lunes|Miercoles|Viernes,active
+40,Salud,122,Cocinar saludable,Lunes|Miercoles|Viernes,active

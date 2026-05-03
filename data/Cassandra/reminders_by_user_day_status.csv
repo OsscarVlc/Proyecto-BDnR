@@ -1,0 +1,137 @@
+user_id,reminder_date,status,scheduled_time,reminder_name,habit_name,message
+1,2026-08-02,pending,2026-08-02 08:05:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+1,2026-08-03,pending,2026-08-03 09:18:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+1,2026-08-04,pending,2026-08-04 10:31:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+1,2026-08-05,done,2026-08-05 07:44:00,Recordatorio Dormir temprano,Dormir temprano,Recuerda completar: Dormir temprano
+1,2026-08-06,pending,2026-08-06 08:57:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+2,2026-08-03,pending,2026-08-03 09:10:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+2,2026-08-04,pending,2026-08-04 10:23:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+2,2026-08-07,pending,2026-08-07 09:02:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+2,2026-08-10,pending,2026-08-10 08:41:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+3,2026-08-04,pending,2026-08-04 10:15:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+3,2026-08-06,pending,2026-08-06 08:41:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+3,2026-08-07,pending,2026-08-07 09:54:00,Recordatorio Dormir temprano,Dormir temprano,Recuerda completar: Dormir temprano
+3,2026-08-08,pending,2026-08-08 10:07:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+4,2026-08-01,pending,2026-08-01 09:38:00,Recordatorio Estudiar 1 hora,Estudiar 1 hora,Recuerda completar: Estudiar 1 hora
+4,2026-08-02,pending,2026-08-02 10:51:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+4,2026-08-05,done,2026-08-05 07:20:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+4,2026-08-06,pending,2026-08-06 08:33:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+5,2026-08-01,pending,2026-08-01 09:30:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+5,2026-08-04,pending,2026-08-04 08:09:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+5,2026-08-06,pending,2026-08-06 08:25:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+5,2026-08-08,pending,2026-08-08 10:51:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+6,2026-08-01,pending,2026-08-01 09:22:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+6,2026-08-03,done,2026-08-03 07:48:00,Recordatorio Estudiar 1 hora,Estudiar 1 hora,Recuerda completar: Estudiar 1 hora
+6,2026-08-04,pending,2026-08-04 08:01:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+6,2026-08-08,pending,2026-08-08 10:43:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+7,2026-08-01,done,2026-08-01 07:24:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+7,2026-08-03,done,2026-08-03 07:40:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+7,2026-08-07,done,2026-08-07 07:32:00,Recordatorio Despertar temprano,Despertar temprano,Recuerda completar: Despertar temprano
+7,2026-08-08,pending,2026-08-08 10:35:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+8,2026-08-01,pending,2026-08-01 09:06:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+8,2026-08-03,done,2026-08-03 07:32:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+8,2026-08-07,done,2026-08-07 07:24:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+8,2026-08-09,done,2026-08-09 07:40:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+9,2026-08-01,pending,2026-08-01 09:58:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+9,2026-08-02,pending,2026-08-02 10:11:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+9,2026-08-04,pending,2026-08-04 08:37:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+9,2026-08-10,pending,2026-08-10 08:45:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+10,2026-08-01,pending,2026-08-01 09:50:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+10,2026-08-02,pending,2026-08-02 10:03:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+10,2026-08-05,pending,2026-08-05 09:42:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+10,2026-08-08,pending,2026-08-08 08:21:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+11,2026-08-02,pending,2026-08-02 10:55:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+11,2026-08-04,pending,2026-08-04 08:21:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+11,2026-08-05,pending,2026-08-05 09:34:00,Recordatorio Dormir temprano,Dormir temprano,Recuerda completar: Dormir temprano
+11,2026-08-10,pending,2026-08-10 10:39:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+12,2026-08-03,done,2026-08-03 07:00:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+12,2026-08-04,pending,2026-08-04 08:13:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+12,2026-08-07,done,2026-08-07 07:52:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+12,2026-08-09,pending,2026-08-09 09:18:00,Recordatorio Estudiar 1 hora,Estudiar 1 hora,Recuerda completar: Estudiar 1 hora
+13,2026-08-02,pending,2026-08-02 08:49:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+13,2026-08-03,pending,2026-08-03 09:02:00,Recordatorio Despertar temprano,Despertar temprano,Recuerda completar: Despertar temprano
+13,2026-08-04,pending,2026-08-04 08:05:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+13,2026-08-09,pending,2026-08-09 09:10:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+14,2026-08-05,pending,2026-08-05 09:10:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+14,2026-08-06,pending,2026-08-06 10:23:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+14,2026-08-08,pending,2026-08-08 08:49:00,Recordatorio Dormir temprano,Dormir temprano,Recuerda completar: Dormir temprano
+14,2026-08-09,pending,2026-08-09 09:02:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+15,2026-08-04,pending,2026-08-04 10:59:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+15,2026-08-06,pending,2026-08-06 10:15:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+15,2026-08-08,pending,2026-08-08 08:41:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+15,2026-08-10,pending,2026-08-10 10:07:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+16,2026-08-04,pending,2026-08-04 10:51:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+16,2026-08-08,pending,2026-08-08 08:33:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+16,2026-08-10,pending,2026-08-10 08:09:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+17,2026-08-02,pending,2026-08-02 08:17:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+17,2026-08-08,pending,2026-08-08 08:25:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+17,2026-08-10,pending,2026-08-10 08:01:00,Recordatorio Practicar gratitud,Practicar gratitud,Recuerda completar: Practicar gratitud
+18,2026-08-01,done,2026-08-01 07:56:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+18,2026-08-09,pending,2026-08-09 09:30:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+18,2026-08-10,pending,2026-08-10 08:53:00,Recordatorio Caminar 10k pasos,Caminar 10k pasos,Recuerda completar: Caminar 10k pasos
+19,2026-08-01,done,2026-08-01 07:48:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+19,2026-08-03,done,2026-08-03 07:24:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+19,2026-08-06,pending,2026-08-06 08:53:00,Recordatorio Estudiar 1 hora,Estudiar 1 hora,Recuerda completar: Estudiar 1 hora
+20,2026-08-01,done,2026-08-01 07:40:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+20,2026-08-03,pending,2026-08-03 09:06:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+20,2026-08-09,done,2026-08-09 07:24:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+21,2026-08-02,pending,2026-08-02 08:45:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+21,2026-08-04,pending,2026-08-04 08:21:00,Recordatorio Practicar gratitud,Practicar gratitud,Recuerda completar: Practicar gratitud
+21,2026-08-06,pending,2026-08-06 08:37:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+22,2026-08-03,pending,2026-08-03 09:50:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+22,2026-08-05,done,2026-08-05 07:16:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+22,2026-08-06,pending,2026-08-06 08:29:00,Recordatorio Dormir temprano,Dormir temprano,Recuerda completar: Dormir temprano
+23,2026-08-01,pending,2026-08-01 09:26:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+23,2026-08-05,done,2026-08-05 07:08:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+23,2026-08-07,done,2026-08-07 07:44:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+24,2026-08-05,done,2026-08-05 07:00:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+24,2026-08-08,pending,2026-08-08 08:49:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+24,2026-08-10,pending,2026-08-10 08:05:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+25,2026-08-06,pending,2026-08-06 08:05:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+25,2026-08-07,pending,2026-08-07 09:18:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+25,2026-08-10,pending,2026-08-10 08:57:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+26,2026-08-05,pending,2026-08-05 09:54:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+26,2026-08-08,pending,2026-08-08 08:33:00,Recordatorio Caminar 10k pasos,Caminar 10k pasos,Recuerda completar: Caminar 10k pasos
+26,2026-08-09,done,2026-08-09 07:36:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+27,2026-08-02,pending,2026-08-02 10:07:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+27,2026-08-08,pending,2026-08-08 10:15:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+27,2026-08-10,pending,2026-08-10 10:51:00,Recordatorio Practicar gratitud,Practicar gratitud,Recuerda completar: Practicar gratitud
+28,2026-08-02,pending,2026-08-02 08:09:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+28,2026-08-04,pending,2026-08-04 08:25:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+28,2026-08-09,done,2026-08-09 07:20:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+29,2026-08-01,pending,2026-08-01 09:38:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+29,2026-08-04,pending,2026-08-04 08:17:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+29,2026-08-07,done,2026-08-07 07:56:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+30,2026-08-01,pending,2026-08-01 09:30:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+30,2026-08-03,done,2026-08-03 07:56:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+30,2026-08-09,pending,2026-08-09 09:14:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+31,2026-08-02,pending,2026-08-02 10:35:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+31,2026-08-03,done,2026-08-03 07:48:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+31,2026-08-06,pending,2026-08-06 10:27:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+32,2026-08-03,done,2026-08-03 07:40:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+32,2026-08-04,pending,2026-08-04 10:03:00,Recordatorio Caminar 10k pasos,Caminar 10k pasos,Recuerda completar: Caminar 10k pasos
+32,2026-08-05,pending,2026-08-05 09:06:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+33,2026-08-01,done,2026-08-01 07:16:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+33,2026-08-05,pending,2026-08-05 09:58:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+33,2026-08-07,pending,2026-08-07 09:34:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+34,2026-08-03,pending,2026-08-03 09:34:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable
+34,2026-08-05,pending,2026-08-05 09:50:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+34,2026-08-07,done,2026-08-07 07:16:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+35,2026-08-06,pending,2026-08-06 10:55:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+35,2026-08-08,pending,2026-08-08 10:31:00,Recordatorio Practicar gratitud,Practicar gratitud,Recuerda completar: Practicar gratitud
+35,2026-08-10,pending,2026-08-10 10:47:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+36,2026-08-02,pending,2026-08-02 08:05:00,Recordatorio Ahorrar semanalmente,Ahorrar semanalmente,Recuerda completar: Ahorrar semanalmente
+36,2026-08-07,done,2026-08-07 07:00:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+36,2026-08-10,pending,2026-08-10 08:49:00,Recordatorio Organizar tareas,Organizar tareas,Recuerda completar: Organizar tareas
+37,2026-08-02,pending,2026-08-02 08:57:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+37,2026-08-08,pending,2026-08-08 08:05:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+37,2026-08-09,pending,2026-08-09 09:18:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+38,2026-08-01,done,2026-08-01 07:36:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+38,2026-08-09,pending,2026-08-09 09:10:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+38,2026-08-10,pending,2026-08-10 08:33:00,Recordatorio Caminar 10k pasos,Caminar 10k pasos,Recuerda completar: Caminar 10k pasos
+39,2026-08-01,done,2026-08-01 07:28:00,Recordatorio Leer 30 min,Leer 30 min,Recuerda completar: Leer 30 min
+39,2026-08-04,pending,2026-08-04 10:07:00,Recordatorio Meditar diario,Meditar diario,Recuerda completar: Meditar diario
+39,2026-08-07,pending,2026-08-07 09:46:00,Recordatorio Escribir metas,Escribir metas,Recuerda completar: Escribir metas
+40,2026-08-01,done,2026-08-01 07:20:00,Recordatorio Beber agua,Beber agua,Recuerda completar: Beber agua
+40,2026-08-03,pending,2026-08-03 09:46:00,Recordatorio Hacer ejercicio,Hacer ejercicio,Recuerda completar: Hacer ejercicio
+40,2026-08-09,done,2026-08-09 07:04:00,Recordatorio Comer saludable,Comer saludable,Recuerda completar: Comer saludable

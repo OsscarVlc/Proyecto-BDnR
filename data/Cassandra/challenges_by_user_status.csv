@@ -1,0 +1,83 @@
+user_id,status,challenge_id,challenge_name,start_date,end_date,progress
+1,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,48
+1,active,2,Reto lectura,2026-06-08,2026-07-08,65
+1,active,6,Reto escribir diario,2026-07-06,2026-08-05,52
+2,active,2,Reto lectura,2026-06-08,2026-07-08,76
+2,active,6,Reto escribir diario,2026-07-06,2026-08-05,63
+2,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,46
+3,active,3,Reto madrugar,2026-06-15,2026-07-15,23
+3,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,70
+4,active,4,Reto ahorro,2026-06-22,2026-07-22,51
+4,active,2,Reto lectura,2026-06-08,2026-07-08,98
+5,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,92
+5,active,7,Reto dieta saludable,2026-07-13,2026-08-12,32
+6,active,6,Reto escribir diario,2026-07-06,2026-08-05,26
+6,active,2,Reto lectura,2026-06-08,2026-07-08,39
+7,active,4,Reto ahorro,2026-06-22,2026-07-22,84
+7,completed,3,Reto madrugar,2026-06-15,2026-07-15,67
+8,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,44
+8,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,31
+9,completed,1,Reto fitness 30 dias,2026-06-01,2026-07-01,55
+9,active,2,Reto lectura,2026-06-08,2026-07-08,72
+10,active,6,Reto escribir diario,2026-07-06,2026-08-05,70
+10,active,2,Reto lectura,2026-06-08,2026-07-08,83
+11,active,3,Reto madrugar,2026-06-15,2026-07-15,30
+11,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,77
+12,active,2,Reto lectura,2026-06-08,2026-07-08,24
+12,active,6,Reto escribir diario,2026-07-06,2026-08-05,92
+13,active,4,Reto ahorro,2026-06-22,2026-07-22,69
+13,active,3,Reto madrugar,2026-06-15,2026-07-15,52
+14,active,2,Reto lectura,2026-06-08,2026-07-08,46
+14,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,97
+15,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,40
+15,active,7,Reto dieta saludable,2026-07-13,2026-08-12,61
+16,active,2,Reto lectura,2026-06-08,2026-07-08,68
+16,active,6,Reto escribir diario,2026-07-06,2026-08-05,55
+17,active,6,Reto escribir diario,2026-07-06,2026-08-05,66
+17,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,49
+18,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,73
+18,active,3,Reto madrugar,2026-06-15,2026-07-15,26
+19,active,2,Reto lectura,2026-06-08,2026-07-08,20
+19,completed,6,Reto escribir diario,2026-07-06,2026-08-05,88
+20,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,95
+20,active,7,Reto dieta saludable,2026-07-13,2026-08-12,35
+21,active,6,Reto escribir diario,2026-07-06,2026-08-05,29
+21,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,93
+22,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,36
+22,completed,3,Reto madrugar,2026-06-15,2026-07-15,70
+23,completed,2,Reto lectura,2026-06-08,2026-07-08,64
+23,active,6,Reto escribir diario,2026-07-06,2026-08-05,51
+24,active,4,Reto ahorro,2026-06-22,2026-07-22,28
+24,active,3,Reto madrugar,2026-06-15,2026-07-15,92
+25,active,2,Reto lectura,2026-06-08,2026-07-08,86
+25,completed,5,Reto sin redes sociales,2026-06-29,2026-07-29,56
+26,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,80
+26,active,7,Reto dieta saludable,2026-07-13,2026-08-12,20
+27,active,6,Reto escribir diario,2026-07-06,2026-08-05,95
+27,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,78
+28,active,4,Reto ahorro,2026-06-22,2026-07-22,72
+28,active,3,Reto madrugar,2026-06-15,2026-07-15,55
+29,active,2,Reto lectura,2026-06-08,2026-07-08,49
+29,completed,6,Reto escribir diario,2026-07-06,2026-08-05,36
+30,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,43
+30,active,7,Reto dieta saludable,2026-07-13,2026-08-12,64
+31,active,2,Reto lectura,2026-06-08,2026-07-08,71
+31,active,5,Reto sin redes sociales,2026-06-29,2026-07-29,41
+32,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,65
+32,completed,3,Reto madrugar,2026-06-15,2026-07-15,99
+33,completed,2,Reto lectura,2026-06-08,2026-07-08,93
+33,active,6,Reto escribir diario,2026-07-06,2026-08-05,80
+34,completed,1,Reto fitness 30 dias,2026-06-01,2026-07-01,87
+34,active,7,Reto dieta saludable,2026-07-13,2026-08-12,27
+35,active,6,Reto escribir diario,2026-07-06,2026-08-05,21
+35,completed,5,Reto sin redes sociales,2026-06-29,2026-07-29,85
+36,completed,4,Reto ahorro,2026-06-22,2026-07-22,79
+36,active,3,Reto madrugar,2026-06-15,2026-07-15,62
+37,active,2,Reto lectura,2026-06-08,2026-07-08,56
+37,active,6,Reto escribir diario,2026-07-06,2026-08-05,43
+38,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,50
+38,active,3,Reto madrugar,2026-06-15,2026-07-15,84
+39,active,2,Reto lectura,2026-06-08,2026-07-08,78
+39,completed,6,Reto escribir diario,2026-07-06,2026-08-05,65
+40,active,1,Reto fitness 30 dias,2026-06-01,2026-07-01,72
+40,active,7,Reto dieta saludable,2026-07-13,2026-08-12,93

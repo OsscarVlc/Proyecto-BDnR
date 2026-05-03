@@ -1,0 +1,409 @@
+user_id,check_date,habit_name,status,completion_time,notes
+1,2026-05-02,Beber agua,completed,2026-05-02 07:07:00,Cumplido correctamente
+1,2026-05-05,Beber agua,missed,2026-05-05 08:18:00,No se realizo ese dia
+1,2026-05-08,Beber agua,completed,2026-05-08 09:29:00,Cumplido correctamente
+1,2026-05-05,Dormir temprano,completed,2026-05-05 10:16:00,Cumplido correctamente
+1,2026-05-08,Dormir temprano,missed,2026-05-08 06:27:00,No se realizo ese dia
+1,2026-05-11,Dormir temprano,completed,2026-05-11 07:38:00,Cumplido correctamente
+1,2026-05-04,Hacer ejercicio,completed,2026-05-04 09:13:00,Cumplido correctamente
+1,2026-05-07,Hacer ejercicio,completed,2026-05-07 10:24:00,Cumplido correctamente
+1,2026-05-10,Hacer ejercicio,missed,2026-05-10 06:35:00,No se realizo ese dia
+1,2026-05-03,Leer 30 min,missed,2026-05-03 08:10:00,No se realizo ese dia
+1,2026-05-06,Leer 30 min,completed,2026-05-06 09:21:00,Cumplido correctamente
+1,2026-05-09,Leer 30 min,completed,2026-05-09 10:32:00,Cumplido correctamente
+1,2026-05-06,Meditar diario,missed,2026-05-06 06:19:00,No se realizo ese dia
+1,2026-05-09,Meditar diario,completed,2026-05-09 07:30:00,Cumplido correctamente
+1,2026-05-12,Meditar diario,completed,2026-05-12 08:41:00,Cumplido correctamente
+2,2026-05-03,Beber agua,missed,2026-05-03 08:14:00,No se realizo ese dia
+2,2026-05-06,Beber agua,completed,2026-05-06 09:25:00,Cumplido correctamente
+2,2026-05-09,Beber agua,completed,2026-05-09 10:36:00,Cumplido correctamente
+2,2026-05-10,Escribir metas,completed,2026-05-10 10:35:00,Cumplido correctamente
+2,2026-05-13,Escribir metas,completed,2026-05-13 06:46:00,Cumplido correctamente
+2,2026-05-16,Escribir metas,missed,2026-05-16 07:57:00,No se realizo ese dia
+2,2026-05-04,Leer 30 min,completed,2026-05-04 09:17:00,Cumplido correctamente
+2,2026-05-07,Leer 30 min,completed,2026-05-07 10:28:00,Cumplido correctamente
+2,2026-05-10,Leer 30 min,missed,2026-05-10 06:39:00,No se realizo ese dia
+2,2026-05-07,Meditar diario,completed,2026-05-07 07:26:00,Cumplido correctamente
+2,2026-05-10,Meditar diario,completed,2026-05-10 08:37:00,Cumplido correctamente
+2,2026-05-13,Meditar diario,missed,2026-05-13 09:48:00,No se realizo ese dia
+3,2026-05-04,Beber agua,completed,2026-05-04 09:21:00,Cumplido correctamente
+3,2026-05-07,Beber agua,completed,2026-05-07 10:32:00,Cumplido correctamente
+3,2026-05-10,Beber agua,missed,2026-05-10 06:43:00,No se realizo ese dia
+3,2026-05-07,Dormir temprano,completed,2026-05-07 07:30:00,Cumplido correctamente
+3,2026-05-10,Dormir temprano,completed,2026-05-10 08:41:00,Cumplido correctamente
+3,2026-05-13,Dormir temprano,missed,2026-05-13 09:52:00,No se realizo ese dia
+3,2026-05-06,Hacer ejercicio,missed,2026-05-06 06:27:00,No se realizo ese dia
+3,2026-05-09,Hacer ejercicio,completed,2026-05-09 07:38:00,Cumplido correctamente
+3,2026-05-12,Hacer ejercicio,completed,2026-05-12 08:49:00,Cumplido correctamente
+3,2026-05-08,Meditar diario,completed,2026-05-08 08:33:00,Cumplido correctamente
+3,2026-05-11,Meditar diario,missed,2026-05-11 09:44:00,No se realizo ese dia
+3,2026-05-14,Meditar diario,completed,2026-05-14 10:55:00,Cumplido correctamente
+4,2026-05-05,Beber agua,completed,2026-05-05 10:28:00,Cumplido correctamente
+4,2026-05-08,Beber agua,missed,2026-05-08 06:39:00,No se realizo ese dia
+4,2026-05-11,Beber agua,completed,2026-05-11 07:50:00,Cumplido correctamente
+4,2026-05-12,Escribir metas,missed,2026-05-12 07:49:00,No se realizo ese dia
+4,2026-05-15,Escribir metas,completed,2026-05-15 08:00:00,Cumplido correctamente
+4,2026-05-18,Escribir metas,completed,2026-05-18 09:11:00,Cumplido correctamente
+4,2026-05-11,Estudiar 1 hora,completed,2026-05-11 06:46:00,Cumplido correctamente
+4,2026-05-14,Estudiar 1 hora,missed,2026-05-14 07:57:00,No se realizo ese dia
+4,2026-05-17,Estudiar 1 hora,completed,2026-05-17 08:08:00,Cumplido correctamente
+4,2026-05-06,Leer 30 min,missed,2026-05-06 06:31:00,No se realizo ese dia
+4,2026-05-09,Leer 30 min,completed,2026-05-09 07:42:00,Cumplido correctamente
+4,2026-05-12,Leer 30 min,completed,2026-05-12 08:53:00,Cumplido correctamente
+5,2026-05-11,Ahorrar semanalmente,completed,2026-05-11 06:50:00,Cumplido correctamente
+5,2026-05-14,Ahorrar semanalmente,missed,2026-05-14 07:01:00,No se realizo ese dia
+5,2026-05-17,Ahorrar semanalmente,completed,2026-05-17 08:12:00,Cumplido correctamente
+5,2026-05-06,Beber agua,missed,2026-05-06 06:35:00,No se realizo ese dia
+5,2026-05-09,Beber agua,completed,2026-05-09 07:46:00,Cumplido correctamente
+5,2026-05-12,Beber agua,completed,2026-05-12 08:57:00,Cumplido correctamente
+5,2026-05-14,Comer saludable,completed,2026-05-14 09:59:00,Cumplido correctamente
+5,2026-05-17,Comer saludable,missed,2026-05-17 10:10:00,No se realizo ese dia
+5,2026-05-20,Comer saludable,completed,2026-05-20 06:21:00,Cumplido correctamente
+5,2026-05-08,Hacer ejercicio,completed,2026-05-08 08:41:00,Cumplido correctamente
+5,2026-05-11,Hacer ejercicio,missed,2026-05-11 09:52:00,No se realizo ese dia
+5,2026-05-14,Hacer ejercicio,completed,2026-05-14 10:03:00,Cumplido correctamente
+6,2026-05-14,Escribir metas,completed,2026-05-14 09:03:00,Cumplido correctamente
+6,2026-05-17,Escribir metas,missed,2026-05-17 10:14:00,No se realizo ese dia
+6,2026-05-20,Escribir metas,completed,2026-05-20 06:25:00,Cumplido correctamente
+6,2026-05-13,Estudiar 1 hora,completed,2026-05-13 08:00:00,Cumplido correctamente
+6,2026-05-16,Estudiar 1 hora,completed,2026-05-16 09:11:00,Cumplido correctamente
+6,2026-05-19,Estudiar 1 hora,missed,2026-05-19 10:22:00,No se realizo ese dia
+6,2026-05-08,Leer 30 min,completed,2026-05-08 08:45:00,Cumplido correctamente
+6,2026-05-11,Leer 30 min,missed,2026-05-11 09:56:00,No se realizo ese dia
+6,2026-05-14,Leer 30 min,completed,2026-05-14 10:07:00,Cumplido correctamente
+6,2026-05-11,Meditar diario,completed,2026-05-11 06:54:00,Cumplido correctamente
+6,2026-05-14,Meditar diario,missed,2026-05-14 07:05:00,No se realizo ese dia
+6,2026-05-17,Meditar diario,completed,2026-05-17 08:16:00,Cumplido correctamente
+7,2026-05-13,Ahorrar semanalmente,completed,2026-05-13 08:04:00,Cumplido correctamente
+7,2026-05-16,Ahorrar semanalmente,completed,2026-05-16 09:15:00,Cumplido correctamente
+7,2026-05-19,Ahorrar semanalmente,missed,2026-05-19 10:26:00,No se realizo ese dia
+7,2026-05-08,Beber agua,completed,2026-05-08 08:49:00,Cumplido correctamente
+7,2026-05-11,Beber agua,missed,2026-05-11 09:00:00,No se realizo ese dia
+7,2026-05-14,Beber agua,completed,2026-05-14 10:11:00,Cumplido correctamente
+7,2026-05-17,Despertar temprano,completed,2026-05-17 07:16:00,Cumplido correctamente
+7,2026-05-20,Despertar temprano,missed,2026-05-20 08:27:00,No se realizo ese dia
+7,2026-05-23,Despertar temprano,completed,2026-05-23 09:38:00,Cumplido correctamente
+7,2026-05-21,Organizar tareas,missed,2026-05-21 06:28:00,No se realizo ese dia
+7,2026-05-24,Organizar tareas,completed,2026-05-24 07:39:00,Cumplido correctamente
+7,2026-05-27,Organizar tareas,completed,2026-05-27 08:50:00,Cumplido correctamente
+8,2026-05-09,Beber agua,missed,2026-05-09 09:56:00,No se realizo ese dia
+8,2026-05-12,Beber agua,completed,2026-05-12 10:07:00,Cumplido correctamente
+8,2026-05-15,Beber agua,completed,2026-05-15 06:18:00,Cumplido correctamente
+8,2026-05-17,Comer saludable,completed,2026-05-17 07:20:00,Cumplido correctamente
+8,2026-05-20,Comer saludable,missed,2026-05-20 08:31:00,No se realizo ese dia
+8,2026-05-23,Comer saludable,completed,2026-05-23 09:42:00,Cumplido correctamente
+8,2026-05-11,Hacer ejercicio,completed,2026-05-11 06:02:00,Cumplido correctamente
+8,2026-05-14,Hacer ejercicio,missed,2026-05-14 07:13:00,No se realizo ese dia
+8,2026-05-17,Hacer ejercicio,completed,2026-05-17 08:24:00,Cumplido correctamente
+8,2026-05-13,Meditar diario,completed,2026-05-13 08:08:00,Cumplido correctamente
+8,2026-05-16,Meditar diario,completed,2026-05-16 09:19:00,Cumplido correctamente
+8,2026-05-19,Meditar diario,missed,2026-05-19 10:30:00,No se realizo ese dia
+9,2026-05-10,Beber agua,completed,2026-05-10 10:03:00,Cumplido correctamente
+9,2026-05-13,Beber agua,completed,2026-05-13 06:14:00,Cumplido correctamente
+9,2026-05-16,Beber agua,missed,2026-05-16 07:25:00,No se realizo ese dia
+9,2026-05-12,Hacer ejercicio,missed,2026-05-12 07:09:00,No se realizo ese dia
+9,2026-05-15,Hacer ejercicio,completed,2026-05-15 08:20:00,Cumplido correctamente
+9,2026-05-18,Hacer ejercicio,completed,2026-05-18 09:31:00,Cumplido correctamente
+9,2026-05-11,Leer 30 min,completed,2026-05-11 06:06:00,Cumplido correctamente
+9,2026-05-14,Leer 30 min,missed,2026-05-14 07:17:00,No se realizo ese dia
+9,2026-05-17,Leer 30 min,completed,2026-05-17 08:28:00,Cumplido correctamente
+9,2026-05-14,Meditar diario,completed,2026-05-14 09:15:00,Cumplido correctamente
+9,2026-05-17,Meditar diario,missed,2026-05-17 10:26:00,No se realizo ese dia
+9,2026-05-20,Meditar diario,completed,2026-05-20 06:37:00,Cumplido correctamente
+10,2026-05-11,Beber agua,completed,2026-05-11 06:10:00,Cumplido correctamente
+10,2026-05-14,Beber agua,missed,2026-05-14 07:21:00,No se realizo ese dia
+10,2026-05-17,Beber agua,completed,2026-05-17 08:32:00,Cumplido correctamente
+10,2026-05-18,Escribir metas,missed,2026-05-18 08:31:00,No se realizo ese dia
+10,2026-05-21,Escribir metas,completed,2026-05-21 09:42:00,Cumplido correctamente
+10,2026-05-24,Escribir metas,completed,2026-05-24 10:53:00,Cumplido correctamente
+10,2026-05-12,Leer 30 min,missed,2026-05-12 07:13:00,No se realizo ese dia
+10,2026-05-15,Leer 30 min,completed,2026-05-15 08:24:00,Cumplido correctamente
+10,2026-05-18,Leer 30 min,completed,2026-05-18 09:35:00,Cumplido correctamente
+10,2026-05-15,Meditar diario,missed,2026-05-15 10:22:00,No se realizo ese dia
+10,2026-05-18,Meditar diario,completed,2026-05-18 06:33:00,Cumplido correctamente
+10,2026-05-21,Meditar diario,completed,2026-05-21 07:44:00,Cumplido correctamente
+11,2026-05-12,Beber agua,missed,2026-05-12 07:17:00,No se realizo ese dia
+11,2026-05-15,Beber agua,completed,2026-05-15 08:28:00,Cumplido correctamente
+11,2026-05-18,Beber agua,completed,2026-05-18 09:39:00,Cumplido correctamente
+11,2026-05-20,Comer saludable,completed,2026-05-20 10:41:00,Cumplido correctamente
+11,2026-05-23,Comer saludable,missed,2026-05-23 06:52:00,No se realizo ese dia
+11,2026-05-26,Comer saludable,completed,2026-05-26 07:03:00,Cumplido correctamente
+11,2026-05-15,Dormir temprano,missed,2026-05-15 10:26:00,No se realizo ese dia
+11,2026-05-18,Dormir temprano,completed,2026-05-18 06:37:00,Cumplido correctamente
+11,2026-05-21,Dormir temprano,completed,2026-05-21 07:48:00,Cumplido correctamente
+11,2026-05-14,Hacer ejercicio,completed,2026-05-14 09:23:00,Cumplido correctamente
+11,2026-05-17,Hacer ejercicio,missed,2026-05-17 10:34:00,No se realizo ese dia
+11,2026-05-20,Hacer ejercicio,completed,2026-05-20 06:45:00,Cumplido correctamente
+12,2026-05-13,Beber agua,completed,2026-05-13 08:24:00,Cumplido correctamente
+12,2026-05-16,Beber agua,completed,2026-05-16 09:35:00,Cumplido correctamente
+12,2026-05-19,Beber agua,missed,2026-05-19 10:46:00,No se realizo ese dia
+12,2026-05-19,Estudiar 1 hora,completed,2026-05-19 09:42:00,Cumplido correctamente
+12,2026-05-22,Estudiar 1 hora,completed,2026-05-22 10:53:00,Cumplido correctamente
+12,2026-05-25,Estudiar 1 hora,missed,2026-05-25 06:04:00,No se realizo ese dia
+12,2026-05-14,Leer 30 min,completed,2026-05-14 09:27:00,Cumplido correctamente
+12,2026-05-17,Leer 30 min,missed,2026-05-17 10:38:00,No se realizo ese dia
+12,2026-05-20,Leer 30 min,completed,2026-05-20 06:49:00,Cumplido correctamente
+12,2026-05-17,Meditar diario,completed,2026-05-17 07:36:00,Cumplido correctamente
+12,2026-05-20,Meditar diario,missed,2026-05-20 08:47:00,No se realizo ese dia
+12,2026-05-23,Meditar diario,completed,2026-05-23 09:58:00,Cumplido correctamente
+13,2026-05-19,Ahorrar semanalmente,completed,2026-05-19 09:46:00,Cumplido correctamente
+13,2026-05-22,Ahorrar semanalmente,completed,2026-05-22 10:57:00,Cumplido correctamente
+13,2026-05-25,Ahorrar semanalmente,missed,2026-05-25 06:08:00,No se realizo ese dia
+13,2026-05-14,Beber agua,completed,2026-05-14 09:31:00,Cumplido correctamente
+13,2026-05-17,Beber agua,missed,2026-05-17 10:42:00,No se realizo ese dia
+13,2026-05-20,Beber agua,completed,2026-05-20 06:53:00,Cumplido correctamente
+13,2026-05-22,Comer saludable,completed,2026-05-22 07:55:00,Cumplido correctamente
+13,2026-05-25,Comer saludable,completed,2026-05-25 08:06:00,Cumplido correctamente
+13,2026-05-28,Comer saludable,missed,2026-05-28 09:17:00,No se realizo ese dia
+13,2026-05-01,Despertar temprano,completed,2026-05-01 10:20:00,Cumplido correctamente
+13,2026-05-23,Despertar temprano,completed,2026-05-23 08:58:00,Cumplido correctamente
+13,2026-05-26,Despertar temprano,missed,2026-05-26 09:09:00,No se realizo ese dia
+14,2026-05-15,Beber agua,missed,2026-05-15 10:38:00,No se realizo ese dia
+14,2026-05-18,Beber agua,completed,2026-05-18 06:49:00,Cumplido correctamente
+14,2026-05-21,Beber agua,completed,2026-05-21 07:00:00,Cumplido correctamente
+14,2026-05-18,Dormir temprano,missed,2026-05-18 08:47:00,No se realizo ese dia
+14,2026-05-21,Dormir temprano,completed,2026-05-21 09:58:00,Cumplido correctamente
+14,2026-05-24,Dormir temprano,completed,2026-05-24 10:09:00,Cumplido correctamente
+14,2026-05-16,Leer 30 min,completed,2026-05-16 06:41:00,Cumplido correctamente
+14,2026-05-19,Leer 30 min,completed,2026-05-19 07:52:00,Cumplido correctamente
+14,2026-05-22,Leer 30 min,missed,2026-05-22 08:03:00,No se realizo ese dia
+14,2026-05-19,Meditar diario,completed,2026-05-19 09:50:00,Cumplido correctamente
+14,2026-05-22,Meditar diario,completed,2026-05-22 10:01:00,Cumplido correctamente
+14,2026-05-25,Meditar diario,missed,2026-05-25 06:12:00,No se realizo ese dia
+15,2026-05-16,Beber agua,completed,2026-05-16 06:45:00,Cumplido correctamente
+15,2026-05-19,Beber agua,completed,2026-05-19 07:56:00,Cumplido correctamente
+15,2026-05-22,Beber agua,missed,2026-05-22 08:07:00,No se realizo ese dia
+15,2026-05-02,Comer saludable,completed,2026-05-02 06:31:00,Cumplido correctamente
+15,2026-05-24,Comer saludable,missed,2026-05-24 09:09:00,No se realizo ese dia
+15,2026-05-27,Comer saludable,completed,2026-05-27 10:20:00,Cumplido correctamente
+15,2026-05-18,Hacer ejercicio,missed,2026-05-18 08:51:00,No se realizo ese dia
+15,2026-05-21,Hacer ejercicio,completed,2026-05-21 09:02:00,Cumplido correctamente
+15,2026-05-24,Hacer ejercicio,completed,2026-05-24 10:13:00,Cumplido correctamente
+15,2026-05-20,Meditar diario,completed,2026-05-20 10:57:00,Cumplido correctamente
+15,2026-05-23,Meditar diario,missed,2026-05-23 06:08:00,No se realizo ese dia
+15,2026-05-26,Meditar diario,completed,2026-05-26 07:19:00,Cumplido correctamente
+16,2026-05-02,Escribir metas,completed,2026-05-02 06:35:00,Cumplido correctamente
+16,2026-05-24,Escribir metas,missed,2026-05-24 09:13:00,No se realizo ese dia
+16,2026-05-27,Escribir metas,completed,2026-05-27 10:24:00,Cumplido correctamente
+16,2026-05-18,Leer 30 min,missed,2026-05-18 08:55:00,No se realizo ese dia
+16,2026-05-21,Leer 30 min,completed,2026-05-21 09:06:00,Cumplido correctamente
+16,2026-05-24,Leer 30 min,completed,2026-05-24 10:17:00,Cumplido correctamente
+16,2026-05-02,Organizar tareas,missed,2026-05-02 10:31:00,No se realizo ese dia
+16,2026-05-05,Organizar tareas,completed,2026-05-05 06:42:00,Cumplido correctamente
+16,2026-05-08,Organizar tareas,completed,2026-05-08 07:53:00,Cumplido correctamente
+17,2026-05-18,Beber agua,missed,2026-05-18 08:59:00,No se realizo ese dia
+17,2026-05-21,Beber agua,completed,2026-05-21 09:10:00,Cumplido correctamente
+17,2026-05-24,Beber agua,completed,2026-05-24 10:21:00,Cumplido correctamente
+17,2026-05-22,Meditar diario,completed,2026-05-22 07:11:00,Cumplido correctamente
+17,2026-05-25,Meditar diario,completed,2026-05-25 08:22:00,Cumplido correctamente
+17,2026-05-28,Meditar diario,missed,2026-05-28 09:33:00,No se realizo ese dia
+17,2026-05-02,Practicar gratitud,missed,2026-05-02 10:35:00,No se realizo ese dia
+17,2026-05-05,Practicar gratitud,completed,2026-05-05 06:46:00,Cumplido correctamente
+17,2026-05-08,Practicar gratitud,completed,2026-05-08 07:57:00,Cumplido correctamente
+18,2026-05-19,Beber agua,completed,2026-05-19 09:06:00,Cumplido correctamente
+18,2026-05-22,Beber agua,completed,2026-05-22 10:17:00,Cumplido correctamente
+18,2026-05-25,Beber agua,missed,2026-05-25 06:28:00,No se realizo ese dia
+18,2026-05-02,Caminar 10k pasos,missed,2026-05-02 10:39:00,No se realizo ese dia
+18,2026-05-05,Caminar 10k pasos,completed,2026-05-05 06:50:00,Cumplido correctamente
+18,2026-05-08,Caminar 10k pasos,completed,2026-05-08 07:01:00,Cumplido correctamente
+18,2026-05-21,Hacer ejercicio,missed,2026-05-21 06:12:00,No se realizo ese dia
+18,2026-05-24,Hacer ejercicio,completed,2026-05-24 07:23:00,Cumplido correctamente
+18,2026-05-27,Hacer ejercicio,completed,2026-05-27 08:34:00,Cumplido correctamente
+19,2026-05-01,Estudiar 1 hora,missed,2026-05-01 07:42:00,No se realizo ese dia
+19,2026-05-04,Estudiar 1 hora,completed,2026-05-04 08:53:00,Cumplido correctamente
+19,2026-05-26,Estudiar 1 hora,completed,2026-05-26 06:31:00,Cumplido correctamente
+19,2026-05-21,Leer 30 min,missed,2026-05-21 06:16:00,No se realizo ese dia
+19,2026-05-24,Leer 30 min,completed,2026-05-24 07:27:00,Cumplido correctamente
+19,2026-05-27,Leer 30 min,completed,2026-05-27 08:38:00,Cumplido correctamente
+19,2026-05-05,Organizar tareas,missed,2026-05-05 08:52:00,No se realizo ese dia
+19,2026-05-08,Organizar tareas,completed,2026-05-08 09:03:00,Cumplido correctamente
+19,2026-05-11,Organizar tareas,completed,2026-05-11 10:14:00,Cumplido correctamente
+20,2026-05-21,Beber agua,missed,2026-05-21 06:20:00,No se realizo ese dia
+20,2026-05-24,Beber agua,completed,2026-05-24 07:31:00,Cumplido correctamente
+20,2026-05-27,Beber agua,completed,2026-05-27 08:42:00,Cumplido correctamente
+20,2026-05-01,Comer saludable,completed,2026-05-01 09:44:00,Cumplido correctamente
+20,2026-05-04,Comer saludable,missed,2026-05-04 10:55:00,No se realizo ese dia
+20,2026-05-07,Comer saludable,completed,2026-05-07 06:06:00,Cumplido correctamente
+20,2026-05-01,Hacer ejercicio,completed,2026-05-01 10:48:00,Cumplido correctamente
+20,2026-05-23,Hacer ejercicio,completed,2026-05-23 08:26:00,Cumplido correctamente
+20,2026-05-26,Hacer ejercicio,missed,2026-05-26 09:37:00,No se realizo ese dia
+21,2026-05-22,Beber agua,completed,2026-05-22 07:27:00,Cumplido correctamente
+21,2026-05-25,Beber agua,completed,2026-05-25 08:38:00,Cumplido correctamente
+21,2026-05-28,Beber agua,missed,2026-05-28 09:49:00,No se realizo ese dia
+21,2026-05-01,Meditar diario,missed,2026-05-01 07:50:00,No se realizo ese dia
+21,2026-05-04,Meditar diario,completed,2026-05-04 08:01:00,Cumplido correctamente
+21,2026-05-26,Meditar diario,completed,2026-05-26 06:39:00,Cumplido correctamente
+21,2026-05-06,Practicar gratitud,completed,2026-05-06 09:03:00,Cumplido correctamente
+21,2026-05-09,Practicar gratitud,completed,2026-05-09 10:14:00,Cumplido correctamente
+21,2026-05-12,Practicar gratitud,missed,2026-05-12 06:25:00,No se realizo ese dia
+22,2026-05-01,Beber agua,completed,2026-05-01 10:56:00,Cumplido correctamente
+22,2026-05-23,Beber agua,completed,2026-05-23 08:34:00,Cumplido correctamente
+22,2026-05-26,Beber agua,missed,2026-05-26 09:45:00,No se realizo ese dia
+22,2026-05-01,Dormir temprano,missed,2026-05-01 07:54:00,No se realizo ese dia
+22,2026-05-04,Dormir temprano,completed,2026-05-04 08:05:00,Cumplido correctamente
+22,2026-05-26,Dormir temprano,completed,2026-05-26 06:43:00,Cumplido correctamente
+22,2026-05-03,Hacer ejercicio,missed,2026-05-03 07:02:00,No se realizo ese dia
+22,2026-05-25,Hacer ejercicio,completed,2026-05-25 10:40:00,Cumplido correctamente
+22,2026-05-28,Hacer ejercicio,completed,2026-05-28 06:51:00,Cumplido correctamente
+23,2026-05-03,Escribir metas,completed,2026-05-03 06:02:00,Cumplido correctamente
+23,2026-05-06,Escribir metas,completed,2026-05-06 07:13:00,Cumplido correctamente
+23,2026-05-09,Escribir metas,missed,2026-05-09 08:24:00,No se realizo ese dia
+23,2026-05-03,Leer 30 min,missed,2026-05-03 07:06:00,No se realizo ese dia
+23,2026-05-25,Leer 30 min,completed,2026-05-25 10:44:00,Cumplido correctamente
+23,2026-05-28,Leer 30 min,completed,2026-05-28 06:55:00,Cumplido correctamente
+23,2026-05-09,Organizar tareas,completed,2026-05-09 07:20:00,Cumplido correctamente
+23,2026-05-12,Organizar tareas,completed,2026-05-12 08:31:00,Cumplido correctamente
+23,2026-05-15,Organizar tareas,missed,2026-05-15 09:42:00,No se realizo ese dia
+24,2026-05-02,Ahorrar semanalmente,missed,2026-05-02 10:03:00,No se realizo ese dia
+24,2026-05-05,Ahorrar semanalmente,completed,2026-05-05 06:14:00,Cumplido correctamente
+24,2026-05-08,Ahorrar semanalmente,completed,2026-05-08 07:25:00,Cumplido correctamente
+24,2026-05-03,Beber agua,missed,2026-05-03 07:10:00,No se realizo ese dia
+24,2026-05-25,Beber agua,completed,2026-05-25 10:48:00,Cumplido correctamente
+24,2026-05-28,Beber agua,completed,2026-05-28 06:59:00,Cumplido correctamente
+24,2026-05-10,Organizar tareas,completed,2026-05-10 08:27:00,Cumplido correctamente
+24,2026-05-13,Organizar tareas,missed,2026-05-13 09:38:00,No se realizo ese dia
+24,2026-05-16,Organizar tareas,completed,2026-05-16 10:49:00,Cumplido correctamente
+25,2026-05-01,Beber agua,missed,2026-05-01 07:06:00,No se realizo ese dia
+25,2026-05-04,Beber agua,completed,2026-05-04 08:17:00,Cumplido correctamente
+25,2026-05-26,Beber agua,completed,2026-05-26 06:55:00,Cumplido correctamente
+25,2026-05-02,Leer 30 min,completed,2026-05-02 08:09:00,Cumplido correctamente
+25,2026-05-05,Leer 30 min,completed,2026-05-05 09:20:00,Cumplido correctamente
+25,2026-05-27,Leer 30 min,missed,2026-05-27 07:58:00,No se realizo ese dia
+25,2026-05-02,Meditar diario,missed,2026-05-02 10:07:00,No se realizo ese dia
+25,2026-05-05,Meditar diario,completed,2026-05-05 06:18:00,Cumplido correctamente
+25,2026-05-08,Meditar diario,completed,2026-05-08 07:29:00,Cumplido correctamente
+26,2026-05-10,Caminar 10k pasos,completed,2026-05-10 08:35:00,Cumplido correctamente
+26,2026-05-13,Caminar 10k pasos,missed,2026-05-13 09:46:00,No se realizo ese dia
+26,2026-05-16,Caminar 10k pasos,completed,2026-05-16 10:57:00,Cumplido correctamente
+26,2026-05-07,Comer saludable,completed,2026-05-07 10:26:00,Cumplido correctamente
+26,2026-05-10,Comer saludable,missed,2026-05-10 06:37:00,No se realizo ese dia
+26,2026-05-13,Comer saludable,completed,2026-05-13 07:48:00,Cumplido correctamente
+26,2026-05-01,Hacer ejercicio,completed,2026-05-01 09:08:00,Cumplido correctamente
+26,2026-05-04,Hacer ejercicio,missed,2026-05-04 10:19:00,No se realizo ese dia
+26,2026-05-07,Hacer ejercicio,completed,2026-05-07 06:30:00,Cumplido correctamente
+27,2026-05-03,Beber agua,completed,2026-05-03 09:20:00,Cumplido correctamente
+27,2026-05-06,Beber agua,missed,2026-05-06 10:31:00,No se realizo ese dia
+27,2026-05-28,Beber agua,completed,2026-05-28 08:09:00,Cumplido correctamente
+27,2026-05-04,Meditar diario,completed,2026-05-04 07:21:00,Cumplido correctamente
+27,2026-05-07,Meditar diario,missed,2026-05-07 08:32:00,No se realizo ese dia
+27,2026-05-10,Meditar diario,completed,2026-05-10 09:43:00,Cumplido correctamente
+27,2026-05-12,Practicar gratitud,completed,2026-05-12 10:45:00,Cumplido correctamente
+27,2026-05-15,Practicar gratitud,completed,2026-05-15 06:56:00,Cumplido correctamente
+27,2026-05-18,Practicar gratitud,missed,2026-05-18 07:07:00,No se realizo ese dia
+28,2026-05-06,Ahorrar semanalmente,completed,2026-05-06 09:31:00,Cumplido correctamente
+28,2026-05-09,Ahorrar semanalmente,completed,2026-05-09 10:42:00,Cumplido correctamente
+28,2026-05-12,Ahorrar semanalmente,missed,2026-05-12 06:53:00,No se realizo ese dia
+28,2026-05-01,Beber agua,completed,2026-05-01 09:16:00,Cumplido correctamente
+28,2026-05-04,Beber agua,missed,2026-05-04 10:27:00,No se realizo ese dia
+28,2026-05-07,Beber agua,completed,2026-05-07 06:38:00,Cumplido correctamente
+28,2026-05-14,Organizar tareas,missed,2026-05-14 07:55:00,No se realizo ese dia
+28,2026-05-17,Organizar tareas,completed,2026-05-17 08:06:00,Cumplido correctamente
+28,2026-05-20,Organizar tareas,completed,2026-05-20 09:17:00,Cumplido correctamente
+29,2026-05-09,Escribir metas,completed,2026-05-09 07:44:00,Cumplido correctamente
+29,2026-05-12,Escribir metas,completed,2026-05-12 08:55:00,Cumplido correctamente
+29,2026-05-15,Escribir metas,missed,2026-05-15 09:06:00,No se realizo ese dia
+29,2026-05-03,Leer 30 min,completed,2026-05-03 06:26:00,Cumplido correctamente
+29,2026-05-06,Leer 30 min,completed,2026-05-06 07:37:00,Cumplido correctamente
+29,2026-05-09,Leer 30 min,missed,2026-05-09 08:48:00,No se realizo ese dia
+29,2026-05-06,Meditar diario,completed,2026-05-06 09:35:00,Cumplido correctamente
+29,2026-05-09,Meditar diario,completed,2026-05-09 10:46:00,Cumplido correctamente
+29,2026-05-12,Meditar diario,missed,2026-05-12 06:57:00,No se realizo ese dia
+30,2026-05-03,Beber agua,completed,2026-05-03 06:30:00,Cumplido correctamente
+30,2026-05-06,Beber agua,completed,2026-05-06 07:41:00,Cumplido correctamente
+30,2026-05-09,Beber agua,missed,2026-05-09 08:52:00,No se realizo ese dia
+30,2026-05-11,Comer saludable,missed,2026-05-11 09:54:00,No se realizo ese dia
+30,2026-05-14,Comer saludable,completed,2026-05-14 10:05:00,Cumplido correctamente
+30,2026-05-17,Comer saludable,completed,2026-05-17 06:16:00,Cumplido correctamente
+30,2026-05-05,Hacer ejercicio,missed,2026-05-05 08:36:00,No se realizo ese dia
+30,2026-05-08,Hacer ejercicio,completed,2026-05-08 09:47:00,Cumplido correctamente
+30,2026-05-11,Hacer ejercicio,completed,2026-05-11 10:58:00,Cumplido correctamente
+31,2026-05-04,Beber agua,completed,2026-05-04 07:37:00,Cumplido correctamente
+31,2026-05-07,Beber agua,missed,2026-05-07 08:48:00,No se realizo ese dia
+31,2026-05-10,Beber agua,completed,2026-05-10 09:59:00,Cumplido correctamente
+31,2026-05-05,Leer 30 min,missed,2026-05-05 08:40:00,No se realizo ese dia
+31,2026-05-08,Leer 30 min,completed,2026-05-08 09:51:00,Cumplido correctamente
+31,2026-05-11,Leer 30 min,completed,2026-05-11 10:02:00,Cumplido correctamente
+31,2026-05-08,Meditar diario,missed,2026-05-08 06:49:00,No se realizo ese dia
+31,2026-05-11,Meditar diario,completed,2026-05-11 07:00:00,Cumplido correctamente
+31,2026-05-14,Meditar diario,completed,2026-05-14 08:11:00,Cumplido correctamente
+32,2026-05-05,Beber agua,missed,2026-05-05 08:44:00,No se realizo ese dia
+32,2026-05-08,Beber agua,completed,2026-05-08 09:55:00,Cumplido correctamente
+32,2026-05-11,Beber agua,completed,2026-05-11 10:06:00,Cumplido correctamente
+32,2026-05-16,Caminar 10k pasos,completed,2026-05-16 09:17:00,Cumplido correctamente
+32,2026-05-19,Caminar 10k pasos,missed,2026-05-19 10:28:00,No se realizo ese dia
+32,2026-05-22,Caminar 10k pasos,completed,2026-05-22 06:39:00,Cumplido correctamente
+32,2026-05-07,Hacer ejercicio,completed,2026-05-07 10:50:00,Cumplido correctamente
+32,2026-05-10,Hacer ejercicio,missed,2026-05-10 06:01:00,No se realizo ese dia
+32,2026-05-13,Hacer ejercicio,completed,2026-05-13 07:12:00,Cumplido correctamente
+33,2026-05-13,Escribir metas,completed,2026-05-13 06:12:00,Cumplido correctamente
+33,2026-05-16,Escribir metas,missed,2026-05-16 07:23:00,No se realizo ese dia
+33,2026-05-19,Escribir metas,completed,2026-05-19 08:34:00,Cumplido correctamente
+33,2026-05-07,Leer 30 min,completed,2026-05-07 10:54:00,Cumplido correctamente
+33,2026-05-10,Leer 30 min,missed,2026-05-10 06:05:00,No se realizo ese dia
+33,2026-05-13,Leer 30 min,completed,2026-05-13 07:16:00,Cumplido correctamente
+33,2026-05-19,Organizar tareas,completed,2026-05-19 07:30:00,Cumplido correctamente
+33,2026-05-22,Organizar tareas,missed,2026-05-22 08:41:00,No se realizo ese dia
+33,2026-05-25,Organizar tareas,completed,2026-05-25 09:52:00,Cumplido correctamente
+34,2026-05-07,Beber agua,completed,2026-05-07 10:58:00,Cumplido correctamente
+34,2026-05-10,Beber agua,missed,2026-05-10 06:09:00,No se realizo ese dia
+34,2026-05-13,Beber agua,completed,2026-05-13 07:20:00,Cumplido correctamente
+34,2026-05-15,Comer saludable,completed,2026-05-15 08:22:00,Cumplido correctamente
+34,2026-05-18,Comer saludable,completed,2026-05-18 09:33:00,Cumplido correctamente
+34,2026-05-21,Comer saludable,missed,2026-05-21 10:44:00,No se realizo ese dia
+34,2026-05-09,Hacer ejercicio,completed,2026-05-09 07:04:00,Cumplido correctamente
+34,2026-05-12,Hacer ejercicio,completed,2026-05-12 08:15:00,Cumplido correctamente
+34,2026-05-15,Hacer ejercicio,missed,2026-05-15 09:26:00,No se realizo ese dia
+35,2026-05-08,Beber agua,missed,2026-05-08 06:05:00,No se realizo ese dia
+35,2026-05-11,Beber agua,completed,2026-05-11 07:16:00,Cumplido correctamente
+35,2026-05-14,Beber agua,completed,2026-05-14 08:27:00,Cumplido correctamente
+35,2026-05-12,Meditar diario,completed,2026-05-12 10:17:00,Cumplido correctamente
+35,2026-05-15,Meditar diario,completed,2026-05-15 06:28:00,Cumplido correctamente
+35,2026-05-18,Meditar diario,missed,2026-05-18 07:39:00,No se realizo ese dia
+35,2026-05-20,Practicar gratitud,missed,2026-05-20 08:41:00,No se realizo ese dia
+35,2026-05-23,Practicar gratitud,completed,2026-05-23 09:52:00,Cumplido correctamente
+35,2026-05-26,Practicar gratitud,completed,2026-05-26 10:03:00,Cumplido correctamente
+36,2026-05-14,Ahorrar semanalmente,missed,2026-05-14 07:27:00,No se realizo ese dia
+36,2026-05-17,Ahorrar semanalmente,completed,2026-05-17 08:38:00,Cumplido correctamente
+36,2026-05-20,Ahorrar semanalmente,completed,2026-05-20 09:49:00,Cumplido correctamente
+36,2026-05-09,Beber agua,completed,2026-05-09 07:12:00,Cumplido correctamente
+36,2026-05-12,Beber agua,completed,2026-05-12 08:23:00,Cumplido correctamente
+36,2026-05-15,Beber agua,missed,2026-05-15 09:34:00,No se realizo ese dia
+36,2026-05-22,Organizar tareas,completed,2026-05-22 10:51:00,Cumplido correctamente
+36,2026-05-25,Organizar tareas,missed,2026-05-25 06:02:00,No se realizo ese dia
+36,2026-05-28,Organizar tareas,completed,2026-05-28 07:13:00,Cumplido correctamente
+37,2026-05-10,Beber agua,completed,2026-05-10 08:19:00,Cumplido correctamente
+37,2026-05-13,Beber agua,missed,2026-05-13 09:30:00,No se realizo ese dia
+37,2026-05-16,Beber agua,completed,2026-05-16 10:41:00,Cumplido correctamente
+37,2026-05-11,Leer 30 min,missed,2026-05-11 09:22:00,No se realizo ese dia
+37,2026-05-14,Leer 30 min,completed,2026-05-14 10:33:00,Cumplido correctamente
+37,2026-05-17,Leer 30 min,completed,2026-05-17 06:44:00,Cumplido correctamente
+37,2026-05-14,Meditar diario,missed,2026-05-14 07:31:00,No se realizo ese dia
+37,2026-05-17,Meditar diario,completed,2026-05-17 08:42:00,Cumplido correctamente
+37,2026-05-20,Meditar diario,completed,2026-05-20 09:53:00,Cumplido correctamente
+38,2026-05-11,Beber agua,missed,2026-05-11 09:26:00,No se realizo ese dia
+38,2026-05-14,Beber agua,completed,2026-05-14 10:37:00,Cumplido correctamente
+38,2026-05-17,Beber agua,completed,2026-05-17 06:48:00,Cumplido correctamente
+38,2026-05-22,Caminar 10k pasos,completed,2026-05-22 10:59:00,Cumplido correctamente
+38,2026-05-25,Caminar 10k pasos,missed,2026-05-25 06:10:00,No se realizo ese dia
+38,2026-05-28,Caminar 10k pasos,completed,2026-05-28 07:21:00,Cumplido correctamente
+38,2026-05-13,Hacer ejercicio,completed,2026-05-13 06:32:00,Cumplido correctamente
+38,2026-05-16,Hacer ejercicio,missed,2026-05-16 07:43:00,No se realizo ese dia
+38,2026-05-19,Hacer ejercicio,completed,2026-05-19 08:54:00,Cumplido correctamente
+39,2026-05-19,Escribir metas,completed,2026-05-19 07:54:00,Cumplido correctamente
+39,2026-05-22,Escribir metas,missed,2026-05-22 08:05:00,No se realizo ese dia
+39,2026-05-25,Escribir metas,completed,2026-05-25 09:16:00,Cumplido correctamente
+39,2026-05-13,Leer 30 min,completed,2026-05-13 06:36:00,Cumplido correctamente
+39,2026-05-16,Leer 30 min,missed,2026-05-16 07:47:00,No se realizo ese dia
+39,2026-05-19,Leer 30 min,completed,2026-05-19 08:58:00,Cumplido correctamente
+39,2026-05-16,Meditar diario,completed,2026-05-16 09:45:00,Cumplido correctamente
+39,2026-05-19,Meditar diario,missed,2026-05-19 10:56:00,No se realizo ese dia
+39,2026-05-22,Meditar diario,completed,2026-05-22 06:07:00,Cumplido correctamente
+40,2026-05-13,Beber agua,completed,2026-05-13 06:40:00,Cumplido correctamente
+40,2026-05-16,Beber agua,missed,2026-05-16 07:51:00,No se realizo ese dia
+40,2026-05-19,Beber agua,completed,2026-05-19 08:02:00,Cumplido correctamente
+40,2026-05-21,Comer saludable,completed,2026-05-21 09:04:00,Cumplido correctamente
+40,2026-05-24,Comer saludable,completed,2026-05-24 10:15:00,Cumplido correctamente
+40,2026-05-27,Comer saludable,missed,2026-05-27 06:26:00,No se realizo ese dia
+40,2026-05-15,Hacer ejercicio,completed,2026-05-15 08:46:00,Cumplido correctamente
+40,2026-05-18,Hacer ejercicio,completed,2026-05-18 09:57:00,Cumplido correctamente
+40,2026-05-21,Hacer ejercicio,missed,2026-05-21 10:08:00,No se realizo ese dia

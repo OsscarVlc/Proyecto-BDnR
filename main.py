@@ -3,7 +3,8 @@ no por base de datos.
 """
 
 from connect import init_connections, close_connections
-
+from Dgraph import model as model_dgraph
+from Cassandra import model as model_cassandra
 
 """
 USO DE IA
@@ -63,7 +64,7 @@ def habits_menu(cassandra_session, mongo_db, dgraph_client):
             # model_mongo.req1(mongo_db)
         elif option == 2:
             print("\nCumplimiento de hábito por usuario")
-            # model_cassandra.req3(cassandra_session)
+            model_cassandra.req3(cassandra_session)
         elif option == 3:
             print("\nPromedio de cumplimiento")
             # model_mongo.req3(mongo_db)
@@ -78,13 +79,13 @@ def habits_menu(cassandra_session, mongo_db, dgraph_client):
             # model_mongo.req10(mongo_db)
         elif option == 7:
             print("\nRecomendación de hábitos")
-            # model_dgraph.req1(dgraph_client)
+            model_dgraph.req1(dgraph_client)
         elif option == 8:
             print("\nHábitos más conectados")
-            # model_dgraph.req4(dgraph_client)
+            model_dgraph.req4(dgraph_client)
         elif option == 9:
             print("\nHábitos compartidos entre amigos")
-            # model_dgraph.req5(dgraph_client)
+            model_dgraph.req5(dgraph_client)
         elif option == 0:
             break
         else:
@@ -109,16 +110,16 @@ def events_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nHistorial de actividad reciente del usuario")
-            # model_cassandra.req1(cassandra_session)
+            model_cassandra.req1(cassandra_session)
         elif option == 2:
             print("\nActividad en un día específico")
-            # model_cassandra.req2(cassandra_session)
+            model_cassandra.req2(cassandra_session)
         elif option == 3:
             print("\nUsuarios con registros en un día específico")
             # model_mongo.req7(mongo_db)
         elif option == 4:
             print("\nEventos recomendados por categoría y amigos")
-            # model_dgraph.req8(dgraph_client)
+            model_dgraph.req8(dgraph_client)
         elif option == 0:
             break
         else:
@@ -146,7 +147,7 @@ def profile_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nRegistros de estado de ánimo")
-            # model_cassandra.req5(cassandra_session)
+            model_cassandra.req5(cassandra_session)
         elif option == 2:
             print("\nUsuarios con más de 5 hábitos")
             # model_mongo.req2(mongo_db)
@@ -161,10 +162,10 @@ def profile_menu(cassandra_session, mongo_db, dgraph_client):
             # model_mongo.req9(mongo_db)
         elif option == 6:
             print("\nAmigos con intereses similares")
-            # model_dgraph.req2(dgraph_client)
+            model_dgraph.req2(dgraph_client)
         elif option == 7:
             print("\nUsuarios influyentes")
-            # model_dgraph.req3(dgraph_client)
+            model_dgraph.req3(dgraph_client)
         elif option == 0:
             break
         else:
@@ -187,10 +188,10 @@ def routines_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nPróximos recordatorios del día")
-            # model_cassandra.req4(cassandra_session)
+            model_cassandra.req4(cassandra_session)
         elif option == 2:
             print("\nMostrar rutina por categoría")
-            # model_cassandra.req6(cassandra_session)
+            model_cassandra.req6(cassandra_session)
         elif option == 0:
             break
         else:
@@ -214,13 +215,13 @@ def challenges_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nRetos activos en participación por usuario")
-            # model_cassandra.req7(cassandra_session)
+            model_cassandra.req7(cassandra_session)
         elif option == 2:
             print("\nTop de participantes por reto")
-            # model_cassandra.req8(cassandra_session)
+            model_cassandra.req8(cassandra_session)
         elif option == 3:
             print("\nRetos recomendados por afinidad social")
-            # model_dgraph.req6(dgraph_client)
+            model_dgraph.req6(dgraph_client)
         elif option == 0:
             break
         else:
@@ -242,7 +243,7 @@ def social_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nActividades recomendadas por categorías")
-            # model_dgraph.req7(dgraph_client)
+            model_dgraph.req7(dgraph_client)
         elif option == 0:
             break
         else:
@@ -261,6 +262,18 @@ def main():
     cassandra_session = conexion["cassandra_session"]
     mongo_db = conexion["mongo_url"]
     dgraph_client = conexion["dgraph_client"]
+
+    print("\n=== Cargando Dgraph ===")
+    model_dgraph.drop_all(dgraph_client)
+    model_dgraph.create_schema(dgraph_client)
+    model_dgraph.load_data(dgraph_client)
+
+    print("\n=== Cargando  Cassandra ===")
+    model_cassandra.create_schema(cassandra_session)
+    model_cassandra.clear_data(cassandra_session)
+    model_cassandra.load_data(cassandra_session)
+
+    print("¡Schemas y datos cargados correctamente!")
 
     while True:
         print_main_menu()
