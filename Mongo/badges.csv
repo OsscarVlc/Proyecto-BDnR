@@ -1,0 +1,21 @@
+badge_id,name,category,criteria_summary
+b1,Constancia,salud,Completar 7 días seguidos
+b2,Disciplina,productividad,Completar metas semanales
+b3,Saludable,salud,Mantener hábitos saludables
+b4,Activo,salud,Ejercicio constante
+b5,Ahorrador,finanzas,Ahorro continuo
+b6,Lector,estudio,Leer 5 libros
+b7,Organizado,productividad,Planificar diario
+b8,Zen,salud,Meditar 30 días
+b9,Madrugador,salud,Despertar temprano
+b10,Enfocado,estudio,Estudiar diario
+b11,Constante+,salud,15 días seguidos
+b12,Pro,productividad,Metas cumplidas
+b13,Fitness,salud,Entrenar diario
+b14,Sabio,estudio,Leer diario
+b15,Finanzas+,finanzas,Ahorro alto
+b16,Elite,salud,Hábito perfecto
+b17,Master,productividad,Productividad alta
+b18,Top,salud,Top hábitos
+b19,Ultra,estudio,Estudio extremo
+b20,Legendario,finanzas,Finanzas perfectas
