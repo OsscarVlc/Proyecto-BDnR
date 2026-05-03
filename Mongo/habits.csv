@@ -1,0 +1,32 @@
+habit_id,user_id,name,category,frequency,status
+h1,u1,Beber agua,salud,diario,active
+h2,u1,Hacer ejercicio,salud,diario,active
+h3,u1,Leer 30 min,estudio,diario,active
+h4,u1,Meditar diario,salud,diario,active
+h5,u1,Dormir temprano,salud,diario,active
+h6,u1,Comer saludable,salud,diario,active
+h7,u1,Escribir metas,productividad,semanal,active
+h8,u2,Leer 30 min,estudio,diario,active
+h9,u2,Meditar diario,salud,diario,active
+h10,u2,Escribir metas,productividad,semanal,active
+h11,u2,Beber agua,salud,diario,active
+h12,u2,Comer saludable,salud,diario,active
+h13,u2,Hacer ejercicio,salud,diario,active
+h14,u3,Dormir temprano,salud,diario,abandoned
+h15,u3,Hacer ejercicio,salud,diario,active
+h16,u3,Beber agua,salud,diario,active
+h17,u3,Meditar diario,salud,diario,active
+h18,u3,Leer 30 min,estudio,diario,active
+h19,u3,Comer saludable,salud,diario,active
+h20,u4,Beber agua,salud,diario,active
+h21,u4,Leer 30 min,estudio,diario,active
+h22,u4,Estudiar 1 hora,estudio,diario,active
+h23,u4,Escribir metas,productividad,semanal,active
+h24,u4,Meditar diario,salud,diario,active
+h25,u4,Comer saludable,salud,diario,active
+h26,u5,Hacer ejercicio,salud,diario,active
+h27,u5,Beber agua,salud,diario,active
+h28,u5,Ahorrar semanalmente,finanzas,semanal,active
+h29,u5,Comer saludable,salud,diario,active
+h30,u5,Dormir temprano,salud,diario,active
+h31,u5,Leer 30 min,estudio,diario,active
