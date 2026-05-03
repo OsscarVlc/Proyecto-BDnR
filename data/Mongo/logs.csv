@@ -1,0 +1,21 @@
+user_id,habit_id,log_date,status,observation
+u1,h1,2024-03-01,completed,Bien
+u1,h2,2024-03-01,completed,Excelente
+u1,h3,2024-03-01,completed,Ok
+u2,h8,2024-03-01,failed,No tuvo tiempo
+u2,h9,2024-03-01,completed,Bien
+u2,h10,2024-03-01,completed,Ok
+u3,h14,2024-03-01,failed,Cansado
+u3,h15,2024-03-01,completed,Bien
+u3,h16,2024-03-01,completed,Bien
+u4,h20,2024-03-01,completed,Bien
+u4,h21,2024-03-01,pending,Aun no
+u4,h22,2024-03-01,completed,Bien
+u5,h26,2024-03-01,completed,Ok
+u5,h27,2024-03-01,completed,Bien
+u5,h28,2024-03-01,completed,Ahorrado
+u6,h32,2024-03-01,completed,Bien
+u6,h33,2024-03-01,completed,Bien
+u7,h38,2024-03-01,completed,Bien
+u8,h44,2024-03-01,completed,Bien
+u9,h50,2024-03-01,completed,Bien
