@@ -16,12 +16,10 @@ def main():
     cassandra_session = conexion["cassandra_session"]
 
     print("=== Dgraph ===")
-    model_dgraph.drop_all(dgraph_client)
     model_dgraph.load_data(dgraph_client)
 
     print("=== Cassandra ===")
-    #model_cassandra.drop_all(cassandra_session)
-    #model_cassandra.load_data(cassandra_session)
+    model_cassandra.load_data(cassandra_session)
 
 
     print("\nCerrando conexiones...")
