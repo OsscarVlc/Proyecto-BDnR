@@ -5,6 +5,7 @@ no por base de datos.
 from connect import init_connections, close_connections
 from Dgraph import model as model_dgraph
 from Cassandra import model as model_cassandra
+from Mongo import model as model_mongo
 
 """
 USO DE IA
@@ -61,22 +62,22 @@ def habits_menu(cassandra_session, mongo_db, dgraph_client):
 
         if option == 1:
             print("\nHábitos activos de un usuario")
-            # model_mongo.req1(mongo_db)
+            model_mongo.req1(mongo_db)
         elif option == 2:
             print("\nCumplimiento de hábito por usuario")
             model_cassandra.req3(cassandra_session)
         elif option == 3:
             print("\nPromedio de cumplimiento")
-            # model_mongo.req3(mongo_db)
+            model_mongo.req3(mongo_db)
         elif option == 4:
             print("\nHábitos más frecuentes")
-            # model_mongo.req4(mongo_db)
+            model_mongo.req4(mongo_db)
         elif option == 5:
             print("\nHábitos por categoría")
-            # model_mongo.req6(mongo_db)
+            model_mongo.req6(mongo_db)
         elif option == 6:
             print("\nHábitos con mayor tasa de abandono")
-            # model_mongo.req10(mongo_db)
+            model_mongo.req10(mongo_db)
         elif option == 7:
             print("\nRecomendación de hábitos")
             model_dgraph.req1(dgraph_client)
@@ -116,7 +117,7 @@ def events_menu(cassandra_session, mongo_db, dgraph_client):
             model_cassandra.req2(cassandra_session)
         elif option == 3:
             print("\nUsuarios con registros en un día específico")
-            # model_mongo.req7(mongo_db)
+            model_mongo.req7(mongo_db)
         elif option == 4:
             print("\nEventos recomendados por categoría y amigos")
             model_dgraph.req8(dgraph_client)
@@ -150,16 +151,16 @@ def profile_menu(cassandra_session, mongo_db, dgraph_client):
             model_cassandra.req5(cassandra_session)
         elif option == 2:
             print("\nUsuarios con más de 5 hábitos")
-            # model_mongo.req2(mongo_db)
+            model_mongo.req2(mongo_db)
         elif option == 3:
             print("\nUsuarios con bajo rendimiento")
-            # model_mongo.req5(mongo_db)
+            model_mongo.req5(mongo_db)
         elif option == 4:
             print("\nDistribución de estados")
-            # model_mongo.req8(mongo_db)
+            model_mongo.req8(mongo_db)
         elif option == 5:
             print("\nLogros e insignias por usuario")
-            # model_mongo.req9(mongo_db)
+            model_mongo.req9(mongo_db)
         elif option == 6:
             print("\nAmigos con intereses similares")
             model_dgraph.req2(dgraph_client)
@@ -260,7 +261,7 @@ def main():
     print("¡Conexiones establecidas!")
 
     cassandra_session = conexion["cassandra_session"]
-    mongo_db = conexion["mongo_url"]
+    mongo_db = conexion.get("mongo_db")
     dgraph_client = conexion["dgraph_client"]
 
     print("\n=== Cargando Dgraph ===")
@@ -272,6 +273,14 @@ def main():
     model_cassandra.create_schema(cassandra_session)
     model_cassandra.clear_data(cassandra_session)
     model_cassandra.load_data(cassandra_session)
+
+    print("\n=== Cargando Mongo ===")
+    if mongo_db is None:
+        print("MongoDB no está disponible en la conexión; saltando carga de Mongo.")
+    else:
+        model_mongo.create_database_and_collections(mongo_db)
+        model_mongo.create_indexes(mongo_db)
+        model_mongo.load_data(mongo_db)
 
     print("¡Schemas y datos cargados correctamente!")
 
