@@ -7,14 +7,6 @@ from pymongo import MongoClient
 
 log = logging.getLogger()
 
-
-def connect_local_mongo(db_name="Proyecto-BDnR", uri="mongodb://localhost:27017"):
-    client = MongoClient(uri)
-    db = client[db_name]
-    print(f"Conectado a MongoDB local en {uri} usando la base '{db_name}'.")
-    return client, db
-
-
 def create_database_and_collections(db):
     collections = db.list_collection_names()
 
@@ -38,8 +30,6 @@ def create_indexes(db):
     db.logs.create_index([("user_id", 1)])
     db.logs.create_index([("log_date", 1)])
     db.logs.create_index([("status", 1)])
-    db.logs.create_index([("habit_id", 1), ("status", 1)])
-    db.logs.create_index([("user_id", 1), ("status", 1)])
     db.users.create_index([("user_id", 1)])
     db.users.create_index([("email", 1)])
     db.badges.create_index([("badge_id", 1)])
@@ -469,70 +459,4 @@ def delete_all_collections(db):
         print(f"Colección '{name}' eliminada.")
 
     print("Todas las colecciones fueron eliminadas.")
-
-
-
-def print_verification_menu():
-    print("\nMONGODB - MENÚ SOLO PA VERIFICAR (AHI LO BORRAN)")
-    print("1 REQ1: Hábitos activos de un usuario")
-    print("2 REQ2: Usuarios con más de 5 hábitos")
-    print("3 REQ3: Promedio de cumplimiento")
-    print("4 REQ4: Hábitos más frecuentes")
-    print("5 REQ5: Usuarios con bajo rendimiento")
-    print("6 REQ6: Hábitos por categoría")
-    print("7 REQ7: Usuarios con actividad en una fecha")
-    print("8 REQ8: Distribución de estados")
-    print("9 REQ9: Logros e insignias por usuario")
-    print("10 REQ10: Hábitos con mayor tasa de abandono")
-    print("11 Crear colecciones")
-    print("12 Crear índices")
-    print("13 Cargar datos")
-    print("14 Eliminar todas las colecciones y datos")
-    print("0 Salir")
-
-
-def local_verification_menu(db):
-    actions = {
-        1: req1,
-        2: req2,
-        3: req3,
-        4: req4,
-        5: req5,
-        6: req6,
-        7: req7,
-        8: req8,
-        9: req9,
-        10: req10,
-        11: create_database_and_collections,
-        12: create_indexes,
-        13: load_data,
-        14: delete_all_collections,
-    }
-
-    while True:
-        print_verification_menu()
-        try:
-            option = int(input("\nSelecciona una opción: "))
-        except ValueError:
-            print("Ingresa un número válido.")
-            continue
-
-        if option == 0:
-            print("Saliendo...")
-            break
-
-        action = actions.get(option)
-        if action is None:
-            print("Opción inválida.")
-            continue
-
-        action(db)
-
-
-if __name__ == "__main__":
-    client, db = connect_local_mongo()
-    try:
-        local_verification_menu(db)
-    finally:
-        client.close()
 
