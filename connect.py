@@ -4,6 +4,7 @@ import logging
 import os
 import pydgraph
 import requests
+from pymongo import MongoClient
 from cassandra.cluster import Cluster
 
 #Logger para el historial
@@ -22,7 +23,8 @@ REPLICATION_FACTOR = os.getenv('CASSANDRA_REPLICATION_FACTOR', '1')
 
 #___________________________________________________________________________________
 #MONGO
-MONGO_URL = os.getenv('MONGO_URL', 'http://localhost:8000')
+MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017')
+MONGO_DBNAME = os.getenv('MONGO_DBNAME', 'Proyecto-BDnR')
 
 #___________________________________________________________________________________
 #DGRAPH
@@ -50,17 +52,28 @@ def close_cassandra(cluster):
 
 #funcion para la conexion a MongoDB
 def connect_mongo():
-    log.info("Conectando a MongoDB via Falcon...")
+    log.info("Conectando a MongoDB %s...", MONGO_URI)
     try:
-        requests.get(MONGO_URL)
-        log.info("Servidor Falcon disponible en %s", MONGO_URL)
-    except requests.exceptions.ConnectionError:
-        log.error("No se puede conectar a Falcon en %s — ¿está corriendo?", MONGO_URL)
-    return MONGO_URL
+        client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
+        # ping server to ensure connection
+        client.server_info()
+        db = client[MONGO_DBNAME]
+        log.info("Conectado a MongoDB en %s usando la base '%s'", MONGO_URI, MONGO_DBNAME)
+        return client, db
+    except Exception as e:
+        log.error("No se puede conectar a MongoDB en %s: %s", MONGO_URI, e)
+        raise
 
 #funcion para cerrar la conexion a MongoDB
-def close_mongo():
-    log.info("MongoDB (Falcon) desconectado.")
+def close_mongo(client):
+    try:
+        if client is None:
+            log.info("No hay cliente MongoDB para cerrar.")
+            return
+        client.close()
+        log.info("MongoDB connection closed")
+    except Exception as e:
+        log.info("Error cerrando MongoDB client: %s", e)
 
 
 #funciones para la conexion a Dgraph
@@ -77,12 +90,13 @@ def close_dgraph(client_stub):
 
 def init_connections():
     cassandra_cluster, cassandra_session = connect_cassandra()
-    mongo_url                            = connect_mongo()
+    mongo_client, mongo_db               = connect_mongo()
     dgraph_stub, dgraph_client           = connect_dgraph()
     return {
         "cassandra_cluster": cassandra_cluster,
         "cassandra_session": cassandra_session,
-        "mongo_url":         mongo_url,
+        "mongo_client":      mongo_client,
+        "mongo_db":          mongo_db,
         "dgraph_stub":       dgraph_stub,
         "dgraph_client":     dgraph_client,
     }
@@ -97,5 +111,5 @@ se pueda acceder a cada una de las conexiones de manera sencilla, sin necesidad 
 
 def close_connections(conns):
     close_cassandra(conns["cassandra_cluster"])
-    close_mongo()
+    close_mongo(conns.get("mongo_client"))
     close_dgraph(conns["dgraph_stub"])
