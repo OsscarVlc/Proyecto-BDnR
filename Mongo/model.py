@@ -444,11 +444,7 @@ def req10(db):
 
 
 def delete_all_collections(db):
-    confirm = input("¿Eliminar todas las colecciones y datos? Escribe 'SI' para confirmar: ")
-    if confirm != "SI":
-        print("Operación cancelada.")
-        return
-
+  
     collections = db.list_collection_names()
     if not collections:
         print("No hay colecciones para eliminar.")
