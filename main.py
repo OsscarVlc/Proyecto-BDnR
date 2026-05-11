@@ -269,6 +269,7 @@ def setup_databases(cassandra_session, mongo_db, dgraph_client):
     if mongo_db is None:
         print("MongoDB no está disponible en la conexión; saltando carga de Mongo.")
     else:
+        model_mongo.delete_all_collections(mongo_db)
         model_mongo.create_database_and_collections(mongo_db)
         model_mongo.create_indexes(mongo_db)
         model_mongo.load_data(mongo_db)
@@ -309,6 +310,8 @@ def main():
             challenges_menu(cassandra_session, mongo_db, dgraph_client)
         elif option == 6:
             social_menu(dgraph_client)
+        elif option == 7:
+            setup_databases(cassandra_session, mongo_db, dgraph_client)
         elif option == 0:
             print("\nCerrando conexiones...")
             close_connections(conexion)
