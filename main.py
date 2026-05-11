@@ -24,6 +24,7 @@ def print_main_menu():
     print("4 -- Rutinas y recordatorios")
     print("5 -- Retos")
     print("6 -- Social y recomendaciones")
+    print("7 -- Inicializar bases de datos")
     print("0 -- Salir")
     print("=" * 45)
 
@@ -229,7 +230,7 @@ def challenges_menu(cassandra_session, mongo_db, dgraph_client):
             print("Opción no válida, intenta de nuevo.")
 
 
-def social_menu(cassandra_session, mongo_db, dgraph_client):
+def social_menu(dgraph_client):
     options = {
         1: "Actividades recomendadas por categorías",
     }
@@ -251,6 +252,30 @@ def social_menu(cassandra_session, mongo_db, dgraph_client):
             print("Opción no válida, intenta de nuevo.")
 
 
+
+
+def setup_databases(cassandra_session, mongo_db, dgraph_client):
+    print("\n=== Configurando Dgraph ===")
+    model_dgraph.drop_all(dgraph_client)
+    model_dgraph.create_schema(dgraph_client)
+    model_dgraph.load_data(dgraph_client)
+
+    print("\n=== Configurando Cassandra ===")
+    model_cassandra.create_schema(cassandra_session)
+    model_cassandra.clear_data(cassandra_session)
+    model_cassandra.load_data(cassandra_session)
+
+    print("\n=== Configurando Mongo ===")
+    if mongo_db is None:
+        print("MongoDB no está disponible en la conexión; saltando carga de Mongo.")
+    else:
+        model_mongo.create_database_and_collections(mongo_db)
+        model_mongo.create_indexes(mongo_db)
+        model_mongo.load_data(mongo_db)
+
+    print("Schemas y datos cargados correctamente")
+
+
 # =========================
 # MAIN
 # =========================
@@ -263,26 +288,6 @@ def main():
     cassandra_session = conexion["cassandra_session"]
     mongo_db = conexion.get("mongo_db")
     dgraph_client = conexion["dgraph_client"]
-
-    print("\n=== Cargando Dgraph ===")
-    model_dgraph.drop_all(dgraph_client)
-    model_dgraph.create_schema(dgraph_client)
-    model_dgraph.load_data(dgraph_client)
-
-    print("\n=== Cargando  Cassandra ===")
-    model_cassandra.create_schema(cassandra_session)
-    model_cassandra.clear_data(cassandra_session)
-    model_cassandra.load_data(cassandra_session)
-
-    print("\n=== Cargando Mongo ===")
-    if mongo_db is None:
-        print("MongoDB no está disponible en la conexión; saltando carga de Mongo.")
-    else:
-        model_mongo.create_database_and_collections(mongo_db)
-        model_mongo.create_indexes(mongo_db)
-        model_mongo.load_data(mongo_db)
-
-    print("¡Schemas y datos cargados correctamente!")
 
     while True:
         print_main_menu()
@@ -303,7 +308,7 @@ def main():
         elif option == 5:
             challenges_menu(cassandra_session, mongo_db, dgraph_client)
         elif option == 6:
-            social_menu(cassandra_session, mongo_db, dgraph_client)
+            social_menu(dgraph_client)
         elif option == 0:
             print("\nCerrando conexiones...")
             close_connections(conexion)

@@ -193,7 +193,7 @@ def create_schema(session):
     session.execute(CREATE_ROUTINES_BY_USER_CATEGORY_TABLE)
     session.execute(CREATE_CHALLENGES_BY_USER_STATUS_TABLE)
     session.execute(CREATE_LEADERBOARD_BY_CHALLENGE_TABLE)
-    print("Esquema CASSANDRAcreado correctamente.\n")
+    print("Esquema CASSANDRA creado correctamente.\n")
 
 
 
@@ -399,6 +399,8 @@ def load_data(session, base_path="./data/cassandra"):
 
     print("Datos de Cassandra cargados correctamente.\n")
 
+
+#Funcion para eliminar los datos de las tablas de Cassandra
 def clear_data(session):
     session.execute("TRUNCATE user_events_by_time")
     session.execute("TRUNCATE user_events_by_day")
