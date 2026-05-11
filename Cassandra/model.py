@@ -109,6 +109,22 @@ CREATE_LEADERBOARD_BY_CHALLENGE_TABLE = """
         PRIMARY KEY ((challenge_id), score, user_id)
     ) WITH CLUSTERING ORDER BY (score DESC, user_id ASC)
 """
+#TABLAS PARA LISTAR USUARIOS Y RETOS
+CREATE_USER_LOOKUP_TABLE = """
+    CREATE TABLE IF NOT EXISTS user_lookup (
+        user_id INT,
+        name TEXT,
+        PRIMARY KEY (user_id)
+    )
+"""
+
+CREATE_CHALLENGE_LOOKUP_TABLE = """
+    CREATE TABLE IF NOT EXISTS challenge_lookup (
+        challenge_id INT,
+        challenge_name TEXT,
+        PRIMARY KEY (challenge_id)
+    )
+"""
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -179,6 +195,17 @@ SELECT_LEADERBOARD_BY_CHALLENGE = """
     WHERE challenge_id = ?
 """
 
+
+
+
+SELECT_ALL_USERS = """
+    SELECT user_id, name FROM user_lookup
+"""
+
+SELECT_ALL_CHALLENGES = """
+    SELECT challenge_id, challenge_name FROM challenge_lookup
+"""
+
 #========================================================================
 # Schema creation function
 #========================================================================
@@ -193,6 +220,8 @@ def create_schema(session):
     session.execute(CREATE_ROUTINES_BY_USER_CATEGORY_TABLE)
     session.execute(CREATE_CHALLENGES_BY_USER_STATUS_TABLE)
     session.execute(CREATE_LEADERBOARD_BY_CHALLENGE_TABLE)
+    session.execute(CREATE_USER_LOOKUP_TABLE)
+    session.execute(CREATE_CHALLENGE_LOOKUP_TABLE)
     print("Esquema CASSANDRA creado correctamente.\n")
 
 
@@ -279,6 +308,16 @@ def load_data(session, base_path="./data/cassandra"):
         INSERT INTO leaderboard_by_challenge
         (challenge_id, score, user_id, completed_actions)
         VALUES (?, ?, ?, ?)
+    """)
+
+    stmt_users = session.prepare("""
+        INSERT INTO user_lookup (user_id, name)
+        VALUES (?, ?)
+    """)
+
+    stmt_challenges = session.prepare("""
+        INSERT INTO challenge_lookup (challenge_id, challenge_name)
+        VALUES (?, ?)
     """)
 
     # Q1
@@ -397,6 +436,26 @@ def load_data(session, base_path="./data/cassandra"):
             ))
     execute_batch(session, stmt_q8, q8_data)
 
+    users_data=data = []
+    with open(os.path.join(base_path, "user_lookup.csv"), newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            users_data.append((
+                int(row["user_id"]),
+                row["name"].strip()
+            ))
+    execute_batch(session, stmt_users, users_data)
+
+    challenges_data = []
+    with open(os.path.join(base_path, "challenge_lookup.csv"), newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            challenges_data.append((
+                int(row["challenge_id"]),
+                row["challenge_name"].strip()
+            ))
+    execute_batch(session, stmt_challenges, challenges_data)
+
     print("Datos de Cassandra cargados correctamente.\n")
 
 
@@ -410,6 +469,8 @@ def clear_data(session):
     session.execute("TRUNCATE routines_by_user_category")
     session.execute("TRUNCATE challenges_by_user_status")
     session.execute("TRUNCATE leaderboard_by_challenge")
+    session.execute("TRUNCATE user_lookup")
+    session.execute("TRUNCATE challenge_lookup")
     print("Datos de Cassandra eliminados correctamente.\n")
 
 
@@ -584,19 +645,83 @@ def get_leaderboard_by_challenge(session, challenge_id):
     if not found:
         print("No results found.\n")
 
+    #USO DE IA, Me apoye de la IA para crear estas funciones las cuales son para ayudar a elegir un 
+    #user_id o challenge_id de manera interactiva para evitar el tener que estar buscando los ids en los CSV
+def select_user(session):
+    #Muestra la lista de usuarios y devuelve el user_id elegido
+    rows = list(session.execute(SELECT_ALL_USERS))
+    if not rows:
+        print("No hay usuarios cargados.")
+        return None
+    #Se utiliza lamda para ordenar las filas
+    rows.sort(key=lambda r: r.user_id)
+    #Al intentar hacer sort solo python no sabe como ordenarlos y por eso se usa key.
+    #le pasas una funcion que recibe un elemento y devuelve el valor por el cual quiero ordenar
+    #Basicamente dentro de cada fila lambbda le pone un valor los cuales utiliza el sort para ordenar
+
+    #Se imprimen los usuarios que hay
+    print("\n--- Usuarios disponibles ---")
+    valid_ids = set()
+    for row in rows:
+        print(f"  [{row.user_id}] {row.name}")
+        valid_ids.add(row.user_id)
+
+    #Se pide al usuario que ingrese un user_id hasta que ingrese uno valido
+    while True:
+        try:
+            user_id = int(input("\nSelecciona el user_id: "))
+        except ValueError:
+            print("Por favor ingresa un numero valido.")
+            continue
+        if user_id in valid_ids:
+            return user_id
+        print("Ese user_id no existe, intenta de nuevo.")
+
+
+def select_challenge(session):
+    rows = list(session.execute(SELECT_ALL_CHALLENGES))
+    if not rows:
+        print("No hay retos cargados.")
+        return None
+
+    rows.sort(key=lambda r: r.challenge_id)
+
+    print("\n--- Retos disponibles ---")
+    valid_ids = set()
+    for row in rows:
+        print(f"  [{row.challenge_id}] {row.challenge_name}")
+        valid_ids.add(row.challenge_id)
+
+    while True:
+        try:
+            challenge_id = int(input("\nSelecciona el challenge_id: "))
+        except ValueError:
+            print("Por favor ingresa un número válido.")
+            continue
+        if challenge_id in valid_ids:
+            return challenge_id
+        print("Ese challenge_id no existe en la lista, intenta de nuevo.")
+
 
 #========================================================================
 #Queries para el MAIN
 #========================================================================
 
 def req1(session):
-    user_id = int(input("Ingresa el user_id: "))
+    #Utilizamos la funcion select_user para elegir un user_id de manera interactiva
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     limit = int(input("¿Cuántos eventos recientes quieres ver?: "))
     get_user_events_by_time(session, user_id, limit)
 
 
 def req2(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     event_date = datetime.datetime.strptime(
         input("Ingresa la fecha (YYYY-MM-DD): "), "%Y-%m-%d"
     ).date()
@@ -604,13 +729,19 @@ def req2(session):
 
 
 def req3(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     habit_name = input("Ingresa el nombre del hábito: ").strip()
     get_habit_tracking_by_user(session, user_id, habit_name)
 
 
 def req4(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     reminder_date = datetime.datetime.strptime(
         input("Ingresa la fecha (YYYY-MM-DD): "), "%Y-%m-%d"
     ).date()
@@ -619,7 +750,10 @@ def req4(session):
 
 
 def req5(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
 
     start_time = datetime.datetime.strptime(
         input("Ingresa la fecha inicial (YYYY-MM-DD): "), "%Y-%m-%d"
@@ -633,18 +767,27 @@ def req5(session):
 
 
 def req6(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     category = input("Ingresa la categoría: ").strip()
     get_routines_by_user_category(session, user_id, category)
 
 
 def req7(session):
-    user_id = int(input("Ingresa el user_id: "))
+    user_id = select_user(session)
+    if user_id is None:
+        print("No se puede realizar la consulta sin un user_id valido.")
+        return
     status = input("Ingresa el estado del reto: ").strip()
     get_challenges_by_user_status(session, user_id, status)
 
 
 def req8(session):
-    challenge_id = int(input("Ingresa el challenge_id: "))
+    challenge_id = select_challenge(session)
+    if challenge_id is None:
+        print("No se puede realizar la consulta sin un challenge_id valido.")
+        return
     get_leaderboard_by_challenge(session, challenge_id)
 
