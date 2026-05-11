@@ -260,7 +260,7 @@ def execute_batch(session, stmt, data, batch_size=25):
 
 
 
-def load_data(session, base_path="./data/cassandra"):
+def load_data(session, base_path="./data/Cassandra"):
     log.info("Loading Cassandra data from CSV files")
 
     print("\nCargando datos de Cassandra...")
