@@ -19,3 +19,52 @@ u6,h33,2024-03-01,completed,Bien
 u7,h38,2024-03-01,completed,Bien
 u8,h44,2024-03-01,completed,Bien
 u9,h50,2024-03-01,completed,Bien
+u6,h32,2024-03-02,completed,Bien
+u6,h33,2024-03-02,completed,Buen entrenamiento
+u6,h34,2024-03-03,missed,No pudo
+u7,h35,2024-03-02,completed,Bien
+u7,h36,2024-03-03,completed,Se despertó
+u7,h37,2024-03-03,completed,Sin redes
+u8,h38,2024-03-02,completed,Comió sano
+u8,h39,2024-03-04,completed,Gratitud hecha
+u8,h40,2024-03-04,completed,Leído
+u9,h41,2024-03-02,failed,Lesión
+u9,h42,2024-03-05,completed,Ahorrado
+u9,h43,2024-03-05,completed,Meta cumplida
+u10,h44,2024-03-02,completed,Bien
+u10,h45,2024-03-03,completed,Medito 10min
+u11,h46,2024-03-03,completed,Comida sana
+u11,h47,2024-03-03,completed,Leí 30min
+u12,h48,2024-03-04,completed,Entrenamiento
+u12,h49,2024-03-04,missed,No durmió bien
+u13,h50,2024-03-04,completed,Agua tomada
+u13,h51,2024-03-05,completed,Estudio cumplido
+u14,h52,2024-03-05,completed,Metas semanales
+u14,h53,2024-03-05,completed,Comió sano
+u15,h54,2024-03-06,completed,Entrenamiento
+u15,h55,2024-03-06,completed,Leído
+u16,h56,2024-03-06,completed,Ahorrado
+u16,h57,2024-03-07,missed,No organizó
+u17,h58,2024-03-07,completed,Medité
+u17,h59,2024-03-07,completed,Bebió agua
+u18,h60,2024-03-08,completed,Leído
+u19,h61,2024-03-08,completed,Comió sano
+u20,h62,2024-03-09,completed,Metas hechas
+u6,h32,2024-03-09,completed,Bien
+u7,h35,2024-03-09,missed,Estuvo fuera
+u8,h38,2024-03-09,completed,Bien
+u9,h41,2024-03-09,completed,Recuperado
+u10,h44,2024-03-09,completed,Bien
+u11,h46,2024-03-10,completed,Comió sano
+u12,h48,2024-03-10,completed,Entrenamiento
+u13,h50,2024-03-10,completed,Bebió agua
+u14,h52,2024-03-10,completed,Metas semanales
+u15,h54,2024-03-10,missed,Lesión
+u16,h56,2024-03-11,completed,Ahorrado
+u17,h59,2024-03-11,completed,Bebió agua
+u18,h60,2024-03-11,completed,Leído
+u19,h61,2024-03-11,completed,Comió sano
+u20,h62,2024-03-11,completed,Metas hechas
+u2,h8,2024-03-12,failed,No tuvo tiempo
+u2,h9,2024-03-12,failed,No lo logró
+u2,h10,2024-03-13,failed,Se le olvidó
