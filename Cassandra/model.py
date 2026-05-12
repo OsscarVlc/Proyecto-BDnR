@@ -5,6 +5,7 @@ import csv
 import os
 import time_uuid
 from cassandra.query import BatchStatement
+from cassandra.util import unix_time_from_uuid1
 
 # Set logger
 log = logging.getLogger()
@@ -136,6 +137,7 @@ SELECT_USER_EVENTS_BY_TIME = """
     SELECT user_id, event_timestamp, event_type
     FROM user_events_by_time
     WHERE user_id = ?
+    LIMIT ?
 """
 
 # Q2: Actividad en un día específico
@@ -170,6 +172,7 @@ SELECT_MOOD_BY_USER_RANGE = """
     WHERE user_id = ?
     AND timestamp >= ?
     AND timestamp <= ?
+    LIMIT ?
 """
 
 # Q6: Mostrar rutina por categoría
@@ -193,6 +196,7 @@ SELECT_LEADERBOARD_BY_CHALLENGE = """
     SELECT challenge_id, score, user_id, completed_actions
     FROM leaderboard_by_challenge
     WHERE challenge_id = ?
+    LIMIT ?
 """
 
 
@@ -482,22 +486,22 @@ def clear_data(session):
 def get_user_events_by_time(session, user_id, limit=10):
     log.info(f"Retrieving recent events for user: {user_id}")
     stmt = session.prepare(SELECT_USER_EVENTS_BY_TIME)
-    rows = session.execute(stmt, [user_id])
+    rows = session.execute(stmt, [user_id, limit])
 
-    print(f"\n=== Recent events for user: {user_id} ===")
-    found = False
+    print(f"\n=== Eventos recientes del usuario {user_id} ===\n")
     count = 0
 
     for row in rows:
-        if count >= limit:
-            break
-        found = True
-        print(f"Event: {row.event_type} at {row.event_timestamp}")
+        fecha = datetime.datetime.fromtimestamp(
+            unix_time_from_uuid1(row.event_timestamp)
+        )
+        print(f"  {fecha.strftime('%Y-%m-%d %H:%M')}  ·  {row.event_type}")
         count += 1
 
-    if not found:
-        print("No results found.\n")
-
+    if count == 0:
+        print("  Sin eventos registrados.")
+    else:
+        print(f"\n({count} evento{'s' if count != 1 else ''})\n")
 
 #Q2
 def get_user_events_by_day(session, user_id, event_date):
@@ -561,12 +565,12 @@ def get_reminders_by_user_day_status(session, user_id, reminder_date, status):
 
 
 #Q5
-def get_mood_by_user_range(session, user_id, start_time, end_time):
+def get_mood_by_user_range(session, user_id, start_time, end_time, limit=50):
     log.info(f"Retrieving mood entries for user: {user_id} from {start_time} to {end_time}")
     stmt = session.prepare(SELECT_MOOD_BY_USER_RANGE)
-    rows = session.execute(stmt, [user_id, start_time, end_time])
+    rows = session.execute(stmt, [user_id, start_time, end_time, limit])
 
-    print(f"\n=== Mood entries for user: {user_id} from {start_time} to {end_time} ===")
+    print(f"\n=== Estado de ánimo del usuario {user_id} ({start_time.date()} a {end_time.date()}) ===")
     found = False
 
     for row in rows:
@@ -579,7 +583,7 @@ def get_mood_by_user_range(session, user_id, start_time, end_time):
         print()
 
     if not found:
-        print("No results found.\n")
+        print("Sin registros en ese rango.\n")
 
 
 #Q6
@@ -624,12 +628,12 @@ def get_challenges_by_user_status(session, user_id, status):
 
 
 #Q8
-def get_leaderboard_by_challenge(session, challenge_id):
+def get_leaderboard_by_challenge(session, challenge_id, limit=10):
     log.info(f"Retrieving leaderboard for challenge: {challenge_id}")
     stmt = session.prepare(SELECT_LEADERBOARD_BY_CHALLENGE)
-    rows = session.execute(stmt, [challenge_id])
+    rows = session.execute(stmt, [challenge_id, limit])
 
-    print(f"\n=== Leaderboard for challenge: {challenge_id} ===")
+    print(f"\n=== Leaderboard del reto {challenge_id} (Top {limit}) ===")
     found = False
     position = 1
 
@@ -643,7 +647,7 @@ def get_leaderboard_by_challenge(session, challenge_id):
         position += 1
 
     if not found:
-        print("No results found.\n")
+        print("Sin participantes.\n")
 
     #USO DE IA, Me apoye de la IA para crear estas funciones las cuales son para ayudar a elegir un 
     #user_id o challenge_id de manera interactiva para evitar el tener que estar buscando los ids en los CSV
@@ -752,7 +756,6 @@ def req4(session):
 def req5(session):
     user_id = select_user(session)
     if user_id is None:
-        print("No se puede realizar la consulta sin un user_id valido.")
         return
 
     start_time = datetime.datetime.strptime(
@@ -763,7 +766,8 @@ def req5(session):
         input("Ingresa la fecha final (YYYY-MM-DD): "), "%Y-%m-%d"
     ).replace(hour=23, minute=59, second=59)
 
-    get_mood_by_user_range(session, user_id, start_time, end_time)
+    limit = int(input("¿Cuántos registros máximos quieres ver?: "))
+    get_mood_by_user_range(session, user_id, start_time, end_time, limit)
 
 
 def req6(session):
@@ -787,7 +791,7 @@ def req7(session):
 def req8(session):
     challenge_id = select_challenge(session)
     if challenge_id is None:
-        print("No se puede realizar la consulta sin un challenge_id valido.")
         return
-    get_leaderboard_by_challenge(session, challenge_id)
+    limit = int(input("¿Cuántos participantes (top N) quieres ver?: "))
+    get_leaderboard_by_challenge(session, challenge_id, limit)
 
